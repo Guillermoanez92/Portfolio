@@ -4,5 +4,44 @@
     - Import all home page specific styles here
 -------------------------------------------------- */
 .view-home {
+	nav {
+		display: flex;
+		justify-content: space-between;
+	}
+	.small-hero {
+		display: flex;
+	}
+	h1 {
+		display:flex;
+		flex-direction: column;
+	}
+	.jobs {
+		display: flex;
+	}
+	.values {
+		display: flex;
+	}
+	.skillset{
+		display: flex;
 
+	}
+	.logos {
+		display: flex;
+	}
+	.social {
+		display: flex;
+	}
+	.about {
+		display: flex;
+	}
+	.hobbies .single {
+		display: flex;
+	}
+	.contact {
+		display: flex;
+	}
+	.top {
+		justify-content: space-between;
+		display: flex;
+	}
 }

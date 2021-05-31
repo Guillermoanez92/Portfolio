@@ -17,7 +17,8 @@
  */
 let integrations = {
 	core: "php-slim",
-	framework: "prismic"
+	framework: "prismic",
+	content_management: "prismic",
 };
 
 /* --- CopyWebpackPlugin Array ---

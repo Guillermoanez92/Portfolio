@@ -10,8 +10,8 @@
  */
 
 /* --- Prismic --- */
-define("CONTENT_URL", "");
-define("CONTENT_TOKEN", null);
+define("CONTENT_URL", "https://guille.cdn.prismic.io/api/v2");
+define("CONTENT_TOKEN", "MC5ZTFZneWhBQUFDWUF6aVRm.MzYk77-9BiYQTQhA77-9e15Z77-9Ee-_ve-_vXzvv71bWe-_vWMxfEfvv73vv71DVkU");
 
 /*
  * Webhook Secret
@@ -20,7 +20,7 @@ define("CONTENT_TOKEN", null);
  *  - scroll down to "CodeIgniter Encryption Keys", select one
  *  - make sure to add secret to the webhook on prismic
  */
-define("CONTENT_WEBHOOK_SECRET", "");
+define("CONTENT_WEBHOOK_SECRET", "7e399a601d90edf3cdb743c7a0d50e15");
 
 /*
  * Your site metadata
