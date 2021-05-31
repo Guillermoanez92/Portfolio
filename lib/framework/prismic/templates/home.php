@@ -44,7 +44,7 @@ echo "</pre>";
 		<p>I think everyone wants the same thing - relationship with humanity, peace with the metaphysical, and experience with the universe. I try to grasp these things with my values: authenticity, creativity, & hospitality.</p>
 		<a href="#"> More About Me</a>
 	</div>
-	<img src="resources/values.jpg" alt="values pic"/>
+	<img src="https://images.prismic.io/guille/f58a412a-13ca-40f5-b653-6df718f20da8_values.jpg?auto=compress,format" alt="values pic"/>
 </section>
 <section class="skillset">
 	<div class="copy">
@@ -53,54 +53,54 @@ echo "</pre>";
 	</div>
 	<div class="skills">
 		<div class="single skills">
-			<img src="resources/skill.png">
+			<img src="https://images.prismic.io/guille/79fa6a80-3622-4c70-8c31-f5d61c877d11_skill.png?auto=compress,format">
 			<h4>Product Design</h4>
 			<p>Working at Facebook has taught me a lot about how to understand users, solve problems and build great products.</p>
 		</div>
 		<div class="single skills">
-			<img src="resources/skill1.png">
+			<img src="https://images.prismic.io/guille/7de3a07d-5af8-4846-9bff-2dac62838457_skill2.png?auto=compress,format">
 			<h4>Product Design</h4>
 			<p>Working at Facebook has taught me a lot about how to understand users, solve problems and build great products.</p>
 		</div>
 		<div class="single skills">
-			<img src="resources/skill2.png">
+			<img src="https://images.prismic.io/guille/bc8b369d-1b7b-4430-bbbb-d5f60861951f_skill1.png?auto=compress,format">
 			<h4>Product Design</h4>
 			<p>Working at Facebook has taught me a lot about how to understand users, solve problems and build great products.</p>
 		</div>
 		<div class="single skills">
-			<img src="resources/skill3.png">
+			<img src="https://images.prismic.io/guille/ec6393ae-4710-4a97-9f84-134aeda1d65e_skill3.png?auto=compress,format">
 			<h4>Product Design</h4>
 			<p>Working at Facebook has taught me a lot about how to understand users, solve problems and build great products.</p>
 		</div>
 	</div>
 </section>
 <div class="logos">
-	<img src="resources/java.png">
-	<img src="resources/css-3-logo-png-transparent.png">
-	<img src="resources/figma-1-logo-png-transparent.png">
-	<img src="resources/phpstorm-logo-svg-vector.svg">
+	<img src="https://images.prismic.io/guille/3dcc06de-3568-48ea-a5c2-9fb455b884a0_java.png?auto=compress,format">
+	<img src="https://images.prismic.io/guille/582ca9ad-4c05-4ca0-91d7-cd8294e5ce96_css-3-logo-png-transparent.png?auto=compress,format">
+	<img src="https://images.prismic.io/guille/14a7afe1-faf7-40ee-99dd-531f6b39627c_figma-1-logo-png-transparent.png?auto=compress,format">
+	<img src="https://images.prismic.io/guille/31fa9d3c-abed-43ae-bc91-339e2ef619e4_584816c8cef1014c0b5e4987.png?auto=compress,format">
 </div>
 <section id="projects" class="projects">
 	<p>My Projects</p>
 	<h2>Work that i've done for the past 8 years</h2>
 	<div class="projects grid">
 		<div class="single projects">
-			<img src="resources/projects.jpg">
+			<img src="https://images.prismic.io/guille/87c2a143-2498-4c18-9699-d47c06c7eade_projects.jpg?auto=compress,format">
 			<h3>Restaurant Web Design</h3>
 			<p>I worked with the guys at CBRE to redesign their entire website and mobile app fro both Android and iOS. This project lasted for 4 months and was a very challenging one.</p>
 		</div>
 		<div class="single projects">
-			<img src="resources/projects1.jpg">
+			<img src="https://images.prismic.io/guille/e16dbdd6-e569-49ad-a610-08605098db1d_projects1.jpg?auto=compress,format">
 			<h3>Restaurant Web Design</h3>
 			<p>I worked with the guys at CBRE to redesign their entire website and mobile app fro both Android and iOS. This project lasted for 4 months and was a very challenging one.</p>
 		</div>
 		<div class="single projects">
-			<img src="resources/projects2.jpg">
+			<img src="https://images.prismic.io/guille/47c5e8bc-0ed0-4109-a46c-f0cbacb6d542_projects2.jpg?auto=compress,format">
 			<h3>Restaurant Web Design</h3>
 			<p>I worked with the guys at CBRE to redesign their entire website and mobile app fro both Android and iOS. This project lasted for 4 months and was a very challenging one.</p>
 		</div>
 		<div class="single projects">
-			<img src="resources/projects3.jpg">
+			<img src="https://images.prismic.io/guille/2b39e2e9-a076-4c9a-ba77-daefccc4c337_projects3.jpg?auto=compress,format">
 			<h3>Restaurant Web Design</h3>
 			<p>I worked with the guys at CBRE to redesign their entire website and mobile app fro both Android and iOS. This project lasted for 4 months and was a very challenging one.</p>
 		</div>
@@ -113,14 +113,14 @@ echo "</pre>";
 		<p>If you area a person who enjoys photography, then I highly recommend that you check out my Instagram. I’m an avid traveller and I capture the best moments that I would love to cherish with the world</p>
 		<a href="#">Follow me on IG</a>
 	</div>
-	<img src="resources/instagram.jpg">
+	<img src="https://images.prismic.io/guille/5233824b-f548-44a5-ba9d-715a3c76078e_instagram.jpg?auto=compress,format">
 </section>
 
 <section class="dribbble">
 	<h2>Dribbble</h2>
 	<p>Each dribbble shot is made with love and care. Do check out my work on Dribbble. Likes and comments are appreciated.</p>
 	<a href="#">Follow me on Dribbble</a>
-	<img src="resources/dribbble.jpg">
+	<img src="https://images.prismic.io/guille/3272d086-9d12-431a-90e4-f274a963dd4c_dribbble.jpg?auto=compress,format">
 </section>
 <section class="about">
 	<div class="copy">
@@ -130,19 +130,19 @@ echo "</pre>";
 	</div>
 	<div class="reviews">
 		<div class="single reviews">
-			<img src="resources/review.jpg">
+			<img src="https://images.prismic.io/guille/e8983454-4846-42d7-81dd-2a4fcec9c446_review.jpg?auto=compress,format">
 			<h4>‘’Robin is one of the best designers I have worked with in my entire life. He is a designer who is very capable of taking up complex projects and delivers impeccable design.’’</h4>
 			<p class="employer">Josh Kirk</p>
 			<p>Churero</p>
 		</div>
 		<div class="single reviews">
-			<img src="resources/review1.jpg">
+			<img src="https://images.prismic.io/guille/e78091a7-88d5-442c-9b88-d14f54505edf_review1.jpg?auto=compress,format">
 			<h4>‘’Robin is one of the best designers I have worked with in my entire life. He is a designer who is very capable of taking up complex projects and delivers impeccable design.’’</h4>
 			<p class="employer">Josh Kirk</p>
 			<p>Churero</p>
 		</div>
 		<div class="single reviews">
-			<img src="resources/review2.jpg">
+			<img src="https://images.prismic.io/guille/cdc66af6-e308-44b3-a426-6124e76af3c0_review2.jpg?auto=compress,format">
 			<h4>‘’Robin is one of the best designers I have worked with in my entire life. He is a designer who is very capable of taking up complex projects and delivers impeccable design.’’</h4>
 			<p class="employer">Josh Kirk</p>
 			<p>Churero</p>
@@ -155,15 +155,15 @@ echo "</pre>";
 	<div class="single hobbies">
 		<div class="hobbie">
 			<h4>Screenwriting</h4>
-			<img src="resources/hobbie.jpeg">
+			<img src="https://images.prismic.io/guille/6e2b2f23-d7eb-4069-8362-9fee815c5101_hobbie.jpeg?auto=compress,format">
 		</div>
 		<div class="hobbie">
 			<h4>Screenwriting</h4>
-			<img src="resources/hobbie1.jpeg">
+			<img src="https://images.prismic.io/guille/92b18e5e-e8b4-4e89-a5ae-1b7ca6e11978_hobbie1.jpeg?auto=compress,format">
 		</div>
 		<div class="hobbie">
 			<h4>Screenwriting</h4>
-			<img src="resources/hobbie2.jpeg">
+			<img src="https://images.prismic.io/guille/a5b3374d-69a8-45ee-bc16-9d402d4ba6a8_hobbie2.jpeg?auto=compress,format">
 		</div>
 	</div>
 </section>
