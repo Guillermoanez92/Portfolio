@@ -1,0 +1,60 @@
+/* 	
+	CUSTOM RESET
+
+	- Global reset styles
+-------------------------------------------------- */
+body {
+	// The locked class is here for when you need to disable downward scroll
+	&.locked {
+
+	}
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+
+	&:focus,
+	&:active {
+		outline: 0 none;
+	}
+}
+
+p {
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+}
+
+input,
+select {
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+	border-radius: 0;
+	box-shadow: none;
+}
+
+.hidden {
+	display: none !important;
+	visibility: hidden;
+}
+
+/* Skip to content */
+#skip-to-content {
+	position: fixed;
+	top: 127px;
+	left: 0;
+	transform: translateX(-100%);
+}

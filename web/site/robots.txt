@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /server
+
+user-agent: Pinterestbot
+Crawl-delay: 0.2

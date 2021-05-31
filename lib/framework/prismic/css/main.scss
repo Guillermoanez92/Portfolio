@@ -1,0 +1,49 @@
+/*
+	FONTS
+
+	- Import all of our fonts
+-------------------------------------------------- */
+@import "_fonts";
+
+/*
+	ABSTRACTS
+
+	- Helpers/utils and non-output snippets only
+	- Global variables, mixins, functions etc
+-------------------------------------------------- */
+@import "/_abstracts/variables";
+@import "/_abstracts/mixins";
+
+/*
+	BASE
+
+	- Global styles
+	- Typography, custom reset styles etc
+-------------------------------------------------- */
+@import "/_base/custom-reset";
+
+/*
+	GLOBAL LAYOUT
+
+	- Styles for the main sections of the layout
+	- Header, footer, navigation, grid etc
+-------------------------------------------------- */
+@import "/lib/framework/prismic/css/_global/header";
+@import "/lib/framework/prismic/css/_global/footer";
+@import "/lib/framework/prismic/css/_global/typography";
+@import "/lib/framework/prismic/css/_global/utility";
+
+/*
+	PLUGINS
+
+	- Third party plugins
+-------------------------------------------------- */
+
+/*
+	PAGES / LOCAL TEMPLATES
+
+	- One main file per page which includes
+	imported page specific styles
+-------------------------------------------------- */
+@import "/_pages/home";
+@import "/_pages/global";

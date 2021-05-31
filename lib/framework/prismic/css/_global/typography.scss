@@ -1,0 +1,21 @@
+.header-xl {
+    @include get-vw(font-size, 95px, 95px);
+    letter-spacing: 0.01px;
+    font-family: $mediaBlack;
+    text-transform: uppercase;
+    color: $brandBlue;
+}
+.header-sm {
+    @include get-vw(font-size, 28px, 28px);
+    letter-spacing: 1.49px;
+    font-family: $mediaBlack;
+    text-transform: uppercase;
+    color: $brandBlue;
+}
+.xl-eyebrow {
+    font-family: $mediaBold;
+    @include get-vw(font-size, 13px, 13px);
+    margin-bottom: 20px;
+    line-height: 1.85;
+    letter-spacing: 0.64px;
+}

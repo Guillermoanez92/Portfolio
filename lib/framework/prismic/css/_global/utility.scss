@@ -1,0 +1,87 @@
+.c-40 {
+    width: 100%;
+    margin: 0 auto;
+    @include get-vw(padding-left, 40px, 40px);
+    @include get-vw(padding-right, 40px, 40px);
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    @include bp-959 {
+        padding: 0 30px;
+    }
+
+    @include bp-370 {
+        padding: 0 20px;
+    }
+}
+
+.c-70 {
+    width: 100%;
+    margin: 0 auto;
+    @include get-vw(padding-left, 70px, 70px);
+    @include get-vw(padding-right, 70px, 70px);
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    @include bp-959 {
+        padding: 0 35px;
+    }
+
+    @include bp-767 {
+        padding: 0 30px;
+    }
+
+    @include bp-370 {
+        padding: 0 20px;
+    }
+}
+
+.c-80 {
+    width: 100%;
+    margin: 0 auto;
+    @include get-vw(padding-left, 80px, 80px);
+    @include get-vw(padding-right, 80px, 80px);
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    @include bp-959 {
+        padding: 0 40px;
+    }
+
+    @include bp-767 {
+        padding: 0 30px;
+    }
+
+    @include bp-370 {
+        padding: 0 20px;
+    }
+}
+
+.c-155 {
+    width: 100%;
+    margin: 0 auto;
+    @include get-vw(padding-left, 155px, 155px);
+    @include get-vw(padding-right, 155px, 155px);
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    @include bp-1200 {
+        padding: 0 120px;
+    }
+
+    @include bp-959 {
+        padding: 0 65px;
+    }
+
+    @include bp-767 {
+        padding: 0 30px;
+    }
+
+    @include bp-370 {
+        padding: 0 20px;
+    }
+}
