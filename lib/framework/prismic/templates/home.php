@@ -11,31 +11,23 @@ echo "</pre>";
 ?>
 
 <section class="small-hero">
-	<img src="https://images.prismic.io/guille/cae2b46c-a9ad-42db-ae42-cb34371626a0_heroimage.jpg?auto=compress,format" alt="personal pic">
+	<img src="<?php echo $data->hero_image->url ?>" alt="personal pic">
 	<div class="copy">
 		<h1><?php echo $data->hero_header[0]->text ?></h1>
-		<h1>Web Developer <span>based in Mexico City.</span></h1>
-		<p>I am a junior web developer with a creative perspective</p>
+		<p> <?php echo $data->hero_copy[0]->text ?></p>
+
 </section>
 <section id="experience" class="experience">
 	<p>Work Experience</p>
 	<h2>Companies i have worked for in the past </h2>
 	<div class="jobs">
-		<div class="single jobs">
-			<h2>01</h2>
-			<h4 class="color">Google,</h4><h4>Interaction Designer</h4>
-			<p class="description jobs">I currently am the lead designer on the interaction design team for Google Play.</p>
-		</div>
-		<div class="single jobs">
-			<h2>01</h2>
-			<h4 class="color">Google,</h4><h4>Interaction Designer</h4>
-			<p class="description jobs">I currently am the lead designer on the interaction design team for Google Play.</p>
-		</div>
-		<div class="single jobs">
-			<h2>01</h2>
-			<h4 class="color">Google,</h4><h4>Interaction Designer</h4>
-			<p class="description jobs">I currently am the lead designer on the interaction design team for Google Play.</p>
-		</div>
+		<?php foreach ($data->work_history_repeater as $key => $item) { ?>
+			<div class="single jobs">
+				<h2>0<?php echo $key + 1 ?></h2>
+				<h4><?php echo $item->title[0]->text ?></h4>
+				<p class="description jobs"><?php echo $item->copy[0]->text ?></p>
+			</div>
+		<?php } ?>
 	</div>
 </section>
 <section class="values">
