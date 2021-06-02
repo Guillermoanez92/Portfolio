@@ -74,7 +74,7 @@ echo "</pre>";
 	<div class="copy">
 		<h2><?php echo $data->social_header[0]->text ?></h2>
 		<p><?php echo $data->social_copy[0]->text ?></p>
-		<a href="#">Follow me on IG</a>
+		<a href="https://www.instagram.com/guillermo.anez/"><?php echo $data->social_anchor_tag[0]->text ?></a>
 	</div>
 	<img src=<?php echo $data->social_image->url ?>
 </section>
