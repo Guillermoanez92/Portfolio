@@ -18,8 +18,8 @@ echo "</pre>";
 
 </section>
 <section id="experience" class="experience">
-	<p>Work Experience</p>
-	<h2>Companies i have worked for in the past </h2>
+	<p><?php echo $data->work_history_eyebrow[0]->text ?></p>
+	<h2><?php echo $data->work_history_header[0]->text ?></h2>
 	<div class="jobs">
 		<?php foreach ($data->work_history_repeater as $key => $item) { ?>
 			<div class="single jobs">
@@ -32,80 +32,51 @@ echo "</pre>";
 </section>
 <section class="values">
 	<div>
-		<h2>Philosophy & Values</h2>
-		<p>I think everyone wants the same thing - relationship with humanity, peace with the metaphysical, and experience with the universe. I try to grasp these things with my values: authenticity, creativity, & hospitality.</p>
-		<a href="#"> More About Me</a>
+		<h2><?php echo $data->values_header[0]->text ?></h2>
+		<p><?php echo $data->values_copy[0]->text ?></p>
 	</div>
-	<img src="https://images.prismic.io/guille/f58a412a-13ca-40f5-b653-6df718f20da8_values.jpg?auto=compress,format" alt="values pic"/>
+	<img src="<?php echo $data->values_image->url ?>" alt="values pic"/>
 </section>
 <section class="skillset">
 	<div class="copy">
-		<h2>Skillset</h2>
-		<p>With skills in over 4 different fields of design, I am the perfect person to hire when it comes to a full fledged project. Whatever your needs are, I can pretty much take on any challenge.s</p>
+		<h2><?php echo $data->skillset_header[0]->text ?></h2>
+		<p><?php echo $data->skillset_copy[0]->text ?></p>
 	</div>
 	<div class="skills">
+		<?php foreach ($data->skillset_repeater as $key => $item) { ?>
 		<div class="single skills">
-			<img src="https://images.prismic.io/guille/79fa6a80-3622-4c70-8c31-f5d61c877d11_skill.png?auto=compress,format">
-			<h4>Product Design</h4>
-			<p>Working at Facebook has taught me a lot about how to understand users, solve problems and build great products.</p>
+			<img src=<?php echo $item->icon->url ?>>
+			<h4><?php echo $item->title[0]->text ?></h4>
+			<p><?php echo $item->copy[0]->text ?></p>
 		</div>
-		<div class="single skills">
-			<img src="https://images.prismic.io/guille/7de3a07d-5af8-4846-9bff-2dac62838457_skill2.png?auto=compress,format">
-			<h4>Product Design</h4>
-			<p>Working at Facebook has taught me a lot about how to understand users, solve problems and build great products.</p>
-		</div>
-		<div class="single skills">
-			<img src="https://images.prismic.io/guille/bc8b369d-1b7b-4430-bbbb-d5f60861951f_skill1.png?auto=compress,format">
-			<h4>Product Design</h4>
-			<p>Working at Facebook has taught me a lot about how to understand users, solve problems and build great products.</p>
-		</div>
-		<div class="single skills">
-			<img src="https://images.prismic.io/guille/ec6393ae-4710-4a97-9f84-134aeda1d65e_skill3.png?auto=compress,format">
-			<h4>Product Design</h4>
-			<p>Working at Facebook has taught me a lot about how to understand users, solve problems and build great products.</p>
-		</div>
+		<?php } ?>
 	</div>
 </section>
 <div class="logos">
-	<img src="https://images.prismic.io/guille/3dcc06de-3568-48ea-a5c2-9fb455b884a0_java.png?auto=compress,format">
-	<img src="https://images.prismic.io/guille/582ca9ad-4c05-4ca0-91d7-cd8294e5ce96_css-3-logo-png-transparent.png?auto=compress,format">
-	<img src="https://images.prismic.io/guille/14a7afe1-faf7-40ee-99dd-531f6b39627c_figma-1-logo-png-transparent.png?auto=compress,format">
-	<img src="https://images.prismic.io/guille/31fa9d3c-abed-43ae-bc91-339e2ef619e4_584816c8cef1014c0b5e4987.png?auto=compress,format">
+	<?php foreach ($data->skillset2_repeater2 as $key => $item) { ?>
+	<img src=<?php echo $item->icon->url ?>>
+	<?php } ?>
 </div>
 <section id="projects" class="projects">
-	<p>My Projects</p>
-	<h2>Work that i've done for the past 8 years</h2>
+	<p><?php echo $data->projects_eyebrow[0]->text ?></p>
+	<h2><?php echo $data->projects_header[0]->text ?></h2>
 	<div class="projects grid">
+		<?php foreach ($data->projects_repeater as $key => $item) { ?>
 		<div class="single projects">
-			<img src="https://images.prismic.io/guille/87c2a143-2498-4c18-9699-d47c06c7eade_projects.jpg?auto=compress,format">
-			<h3>Restaurant Web Design</h3>
-			<p>I worked with the guys at CBRE to redesign their entire website and mobile app fro both Android and iOS. This project lasted for 4 months and was a very challenging one.</p>
+			<img src=<?php echo $item->icon->url ?>>
+			<h3><?php echo $item->title[0]->text ?></h3>
+			<p><?php echo $item->copy[0]->text ?></p>
 		</div>
-		<div class="single projects">
-			<img src="https://images.prismic.io/guille/e16dbdd6-e569-49ad-a610-08605098db1d_projects1.jpg?auto=compress,format">
-			<h3>Restaurant Web Design</h3>
-			<p>I worked with the guys at CBRE to redesign their entire website and mobile app fro both Android and iOS. This project lasted for 4 months and was a very challenging one.</p>
-		</div>
-		<div class="single projects">
-			<img src="https://images.prismic.io/guille/47c5e8bc-0ed0-4109-a46c-f0cbacb6d542_projects2.jpg?auto=compress,format">
-			<h3>Restaurant Web Design</h3>
-			<p>I worked with the guys at CBRE to redesign their entire website and mobile app fro both Android and iOS. This project lasted for 4 months and was a very challenging one.</p>
-		</div>
-		<div class="single projects">
-			<img src="https://images.prismic.io/guille/2b39e2e9-a076-4c9a-ba77-daefccc4c337_projects3.jpg?auto=compress,format">
-			<h3>Restaurant Web Design</h3>
-			<p>I worked with the guys at CBRE to redesign their entire website and mobile app fro both Android and iOS. This project lasted for 4 months and was a very challenging one.</p>
-		</div>
-		<a href="#">View All Projects</a>
+		<?php } ?>
 	</div>
 </section>
 <section class="social">
 	<div class="copy">
-		<h2>Instagram</h2>
-		<p>If you area a person who enjoys photography, then I highly recommend that you check out my Instagram. I’m an avid traveller and I capture the best moments that I would love to cherish with the world</p>
+		<h2><?php echo $data->social_header[0]->text ?></h2>
+		<p><?php echo $data->social_copy[0]->text ?></p>
 		<a href="#">Follow me on IG</a>
 	</div>
-	<img src="https://images.prismic.io/guille/5233824b-f548-44a5-ba9d-715a3c76078e_instagram.jpg?auto=compress,format">
+	<img src=<?php echo $data->social_image->url ?>
 </section>
 
 <section class="dribbble">
