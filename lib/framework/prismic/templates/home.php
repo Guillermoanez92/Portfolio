@@ -20,9 +20,9 @@ echo "</pre>";
 <section id="experience" class="experience">
 	<p><?php echo $data->work_history_eyebrow[0]->text ?></p>
 	<h2><?php echo $data->work_history_header[0]->text ?></h2>
-	<div class="jobs">
+	<div class="companies">
 		<?php foreach ($data->work_history_repeater as $key => $item) { ?>
-			<div class="single jobs">
+			<div class="company">
 				<h2>0<?php echo $key + 1 ?></h2>
 				<h4><?php echo $item->title[0]->text ?></h4>
 				<p class="description jobs"><?php echo $item->copy[0]->text ?></p>
