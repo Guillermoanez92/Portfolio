@@ -1,28 +1,22 @@
 @font-face {
-    font-family: MaisonNeue-ExtendedDemiBold;
-    src: url("../fonts/MaisonNeue-ExtendedDemiBold.woff2") format("woff2");
+	font-family: Sen-Regular;
+	src: url("../fonts/Sen-Regular.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: Sen-ExtraBold;
+    src: url("../fonts/Sen-ExtraBold.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: MediaSansExtended-Bold;
-    src: url("../fonts/MediaSansExtended-Bold.woff2") format("woff2");
+    font-family: Sen-Bold;
+    src: url("../fonts/Sen-Bold.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
-@font-face {
-    font-family: MediaSansExtended-Black;
-    src: url("../fonts/MediaSansExtended-Black.woff2") format("woff2");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: MaisonNeue-ExtendedMedium;
-    src: url("../fonts/MaisonNeue-ExtendedMedium.woff2") format("woff2");
-    font-weight: normal;
-    font-style: normal;
-}
 
