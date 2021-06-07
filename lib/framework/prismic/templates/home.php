@@ -15,7 +15,7 @@ echo "</pre>";
 	<div class="copy">
 		<h1><?php echo $data->hero_header[0]->text ?></h1>
 		<p> <?php echo $data->hero_copy[0]->text ?></p>
-
+	</div>
 </section>
 <section id="experience" class="experience">
 	<p><?php echo $data->work_history_eyebrow[0]->text ?></p>
