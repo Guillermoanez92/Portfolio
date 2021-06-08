@@ -8,7 +8,7 @@
 		display: flex;
 		justify-content: space-between;
 	}
-	.small-hero {
+	.hero-section {
 		display: flex;
 		img{
 			width: 750px;
@@ -24,6 +24,7 @@
 				line-height: 1.28;
 			}
 			p{
+				font-family: $senRegular;
 				display: flex;
 				flex-direction: column;
 				font-size: 18px;
@@ -32,6 +33,7 @@
 		}
 	}
 	.experience{
+		font-family: $senBold;
 		p{
 			text-transform: uppercase;
 			color: #8491A0;
@@ -46,13 +48,22 @@
 			display: flex;
 			.company {
 				h2 {
+					font-family: $senRegular;
 					font-size: 117px;
 					color: #8491A0;
 				}
+				.color {
+					color:#3CC74E;
+					:nth-child(2){
+						color: #609BFF;
+					}
+				}
 				h4 {
 					font-size: 24px;
+					color:#FFF;
 				}
 				p {
+					font-family: $senRegular;
 					font-size: 16px;
 					text-transform: initial;
 					line-height: 1.5;

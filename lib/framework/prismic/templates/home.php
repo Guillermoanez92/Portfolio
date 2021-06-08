@@ -10,7 +10,7 @@ echo "</pre>";
 /* --------------- */
 ?>
 
-<section class="small-hero">
+<section class="hero-section">
 	<img src="<?php echo $data->hero_image->url ?>" alt="personal pic">
 	<div class="copy">
 		<h1><?php echo $data->hero_header[0]->text ?></h1>
@@ -24,6 +24,7 @@ echo "</pre>";
 		<?php foreach ($data->work_history_repeater as $key => $item) { ?>
 			<div class="company">
 				<h2>0<?php echo $key + 1 ?></h2>
+				<h4 class="color"><?php echo $item->title_color[0]->text ?></h4>
 				<h4><?php echo $item->title[0]->text ?></h4>
 				<p class="description jobs"><?php echo $item->copy[0]->text ?></p>
 			</div>
