@@ -37,7 +37,7 @@ echo "</pre>";
 	</div>
 </section>
 <section class="values">
-	<div>
+	<div class="copy">
 		<h2><?php echo $data->values_header[0]->text ?></h2>
 		<p><?php echo $data->values_copy[0]->text ?></p>
 	</div>
