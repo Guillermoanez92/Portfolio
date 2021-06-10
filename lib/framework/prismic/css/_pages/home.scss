@@ -4,8 +4,9 @@
     - Import all home page specific styles here
 -------------------------------------------------- */
 .view-home {
-	//background-color: black;
+	background-color: black;
 	.hero-section {
+		background: linear-gradient(to right,black 40%,	#383838 40% 60% 60%);
 		height: 814px;
 		display: flex;
 		img {
@@ -41,7 +42,7 @@
 		}
 	}
 	.experience{
-		outline: black 1px solid;
+		outline: red 1px solid;
 		height: 715px;
 		font-family: $senBold;
 		padding: 120px 72px;
@@ -60,7 +61,8 @@
 		.companies {
 			display: flex;
 			.company {
-				max-width: 415px;
+				width: 415px;
+				margin-right: 25px;
 				h2 {
 					font-family: $senRegular;
 					font-size: 117px;
