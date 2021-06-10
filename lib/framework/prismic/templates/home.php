@@ -31,7 +31,7 @@ echo "</pre>";
 					</div>
 				<h4><?php echo $item->title[0]->text ?></h4>
 				</div>
-				<p class="description jobs"><?php echo $item->copy[0]->text ?></p>
+				<p class="description"><?php echo $item->copy[0]->text ?></p>
 			</div>
 		<?php } ?>
 	</div>

@@ -5,31 +5,26 @@
 -------------------------------------------------- */
 .view-home {
 	//background-color: black;
-	width: 100%;
 	.hero-section {
-		width: 100%;
+		outline: 1px solid green;
 		height: 814px;
 		display: flex;
-		img{
-			width: 750px;
+		img {
 			height: 650px;
-			margin: 80px 0;
+			width: 750px;
 		}
 		.copy {
-			margin: 220px 40px;
-			max-width: 740px;
-			outline: black 1px solid;
+			padding: 220px 0;
+			outline: 1px solid red;
 			h1 {
-				color: #FFF;
+				color: black;
 				display: flex;
 				flex-direction: column;
 				font-family: $senBold;
 				z-index: 1;
 				font-size: 78px;
 				line-height: 1.28;
-			}
-			.color{
-				color: #8491A0;
+				margin-bottom: 30px;
 			}
 			p{
 				font-family: $senRegular;
@@ -42,10 +37,9 @@
 	}
 	.experience{
 		outline: black 1px solid;
-		height: 515px;
+		height: 715px;
 		font-family: $senBold;
-		margin: 130px 0;
-		padding: 0 72px;
+		padding: 120px 72px;
 		p{
 			text-transform: uppercase;
 			color: #8491A0;
@@ -66,7 +60,6 @@
 					font-family: $senRegular;
 					font-size: 117px;
 					color: #8491A0;
-					margin-bottom: 22px ;
 				}
 				.name {
 					display: flex;
@@ -74,9 +67,6 @@
 					.color {
 						h4{
 							color: #3CC74E;
-							:nth-child(2){
-								color:#609BFF;
-							}
 						}
 					}
 					h4 {
@@ -84,13 +74,14 @@
 						color: #FFF;
 					}
 				}
-				p {
+				p:last-child{
 					font-family: $senRegular;
 					font-size: 16px;
 					text-transform: initial;
 					line-height: 1.5;
-					margin-bottom: 140px;
+
 				}
+
 			}
 		}
 	}
