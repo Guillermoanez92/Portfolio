@@ -18,22 +18,17 @@ echo "</pre>";
 		<p> <?php echo $data->hero_copy[0]->text ?></p>
 	</div>
 </section>
-<section id="experience" class="experience">
-	<p><?php echo $data->work_history_eyebrow[0]->text ?></p>
+<section id="work_history" class="work_history">
+	<p class="eyebrow"><?php echo $data->work_history_eyebrow[0]->text ?></p>
 	<h2><?php echo $data->work_history_header[0]->text ?></h2>
 	<div class="companies">
 		<?php foreach ($data->work_history_repeater as $key => $item) { ?>
-			<div class="company">
-				<h2>0<?php echo $key + 1 ?></h2>
-				<div class="name">
-					<div class="color">
-					<h4 ><?php echo $item->title_color[0]->text ?></h4>
-					</div>
-				<h4><?php echo $item->title[0]->text ?></h4>
-				</div>
-				<p class="description"><?php echo $item->copy[0]->text ?></p>
-			</div>
-		<?php } ?>
+		<div class="company">
+			<h2>0<?php echo $key + 1 ?></h2>
+			<h4><?php echo $item->title_color[0]->text ?><span><?php echo $item->title[0]->text ?></span></h4>
+			<p class="description"><?php echo $item->copy[0]->text ?></p>
+		</div>
+	<?php } ?>
 	</div>
 </section>
 <section class="values">

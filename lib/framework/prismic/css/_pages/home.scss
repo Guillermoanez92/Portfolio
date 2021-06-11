@@ -6,7 +6,7 @@
 .view-home {
 	background-color: black;
 	.hero-section {
-		background: linear-gradient(to right,black 40%,	#383838 40% 60% 60%);
+		background: linear-gradient(to right,#000 40%,#181823 40% 60%);
 		height: 814px;
 		display: flex;
 		img {
@@ -28,120 +28,119 @@
 				line-height: 1.28;
 			}
 			.color{
-				color: rgba(255, 255, 255, 0.5);
+				color: #FFFFFF80;
+
 			}
 			p{
 				font-family: $senRegular;
-				display: flex;
-				flex-direction: column;
 				font-size: 18px;
 				line-height: 1.5;
 				margin-top: 30px;
-				color: white;
+				color: #FFFFFF;
 			}
 		}
 	}
-	.experience{
-		outline: red 1px solid;
+	.work_history{
 		height: 715px;
-		font-family: $senBold;
 		padding: 120px 72px;
 		p{
 			text-transform: uppercase;
 			color: #8491A0;
 			font-size: 16px;
+			font-family: $senBold;
+			margin-bottom: 8px;
 		}
 		h2 {
-			max-width: 690px;
+			font-family: $senBold;
 			color: #FFF;
 			font-size: 55px;
 			line-height: 1.2;
-			margin-bottom: 40px;
+			width: 690px;
 		}
 		.companies {
 			display: flex;
+			margin-top: 40px;
 			.company {
+				outline: red 1px solid;
 				width: 415px;
-				margin-right: 25px;
+				margin-right: 24px;
 				h2 {
 					font-family: $senRegular;
 					font-size: 117px;
 					color: #8491A0;
+					margin-bottom: 8px;
 				}
-				.name {
-					display: flex;
+				h4{
+					font-size: 24px;
+					font-family: $senBold;
+					color: #3CC74E;
 					margin-bottom: 22px;
-					.color {
-						h4{
-							color: #3CC74E;
-						}
-					}
-					h4 {
-						font-size: 24px;
+					span {
 						color: #FFF;
 					}
 				}
-				p:last-child{
+				.description {
 					font-family: $senRegular;
 					font-size: 16px;
 					text-transform: initial;
 					line-height: 1.5;
-
+					width: 368px;
 				}
-
 			}
+
+
 		}
 	}
-	.values {
-		font-family: $senRegular;
-		display:flex;
+}
+.values {
+	font-family: $senRegular;
+	display:flex;
+	height: 600px;
+	.copy {
+		width: 50%;
+		margin: 0 72px;
+		h2 {
+			font-family: $senBold;
+			font-size: 55px;
+			margin-bottom: 24px;
+		}
+
+		p {
+			max-width: 576px;
+			font-size: 18px;
+			margin-bottom: 282px;
+		}
+	}
+	img {
+		width: 720px;
 		height: 600px;
-		.copy {
-			width: 50%;
-			margin: 0 72px;
-			h2 {
-				font-family: $senBold;
-				font-size: 55px;
-				margin-bottom: 24px;
-			}
+	}
+}
+.skillset{
+	display: flex;
 
-			p {
-				max-width: 576px;
-				font-size: 18px;
-				margin-bottom: 282px;
-			}
-		}
-		img {
-			width: 720px;
-			height: 600px;
-		}
-	}
-	.skillset{
-		display: flex;
-
-	}
-	.logos {
-		display: flex;
-	}
-	.social {
-		display: flex;
-	}
-	.about {
-		display: flex;
-	}
-	.hobbies {
-		.all-hobby-images {
-			.hobby-images {
-				width: 400px;
-				height: 400px;
-			}
+}
+.logos {
+	display: flex;
+}
+.social {
+	display: flex;
+}
+.about {
+	display: flex;
+}
+.hobbies {
+	.all-hobby-images {
+		.hobby-images {
+			width: 400px;
+			height: 400px;
 		}
 	}
-	.contact {
-		display: flex;
-	}
-	.top {
-		justify-content: space-between;
-		display: flex;
-	}
+}
+.contact {
+	display: flex;
+}
+.top {
+	justify-content: space-between;
+	display: flex;
 }
