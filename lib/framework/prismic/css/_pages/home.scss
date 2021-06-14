@@ -43,7 +43,7 @@
 	.work_history{
 		height: 715px;
 		padding: 120px 72px;
-		p{
+		> p {
 			text-transform: uppercase;
 			color: #8491A0;
 			font-size: 16px;
@@ -59,24 +59,43 @@
 		}
 		.companies {
 			display: flex;
+			justify-content: space-between;
 			margin-top: 40px;
+			.eyebrow {
+				font-family: $senRegular;
+				font-size: 117px;
+				line-height: 1.2;
+				color: #8491A0;
+			}
+			h4 {
+				font-size: 24px;
+				font-family: $senBold;
+				margin-bottom: 22px;
+				line-height: 1.5;
+				color: #FFF;
+
+			}
 			.company {
-				outline: red 1px solid;
-				width: 415px;
-				margin-right: 24px;
-				h2 {
-					font-family: $senRegular;
-					font-size: 117px;
-					color: #8491A0;
-					margin-bottom: 8px;
+				max-width: calc(33.33% - 57px);
+				&:nth-child(1){
+					h4 {
+						span {
+							color: #3CC74E;
+						}
+					}
 				}
-				h4{
-					font-size: 24px;
-					font-family: $senBold;
-					color: #3CC74E;
-					margin-bottom: 22px;
-					span {
-						color: #FFF;
+				&:nth-child(2){
+					h4 {
+						span {
+							color:#609BFF;
+						}
+					}
+				}
+				&:nth-child(3){
+					h4 {
+						span {
+							color: #E95D90;
+						}
 					}
 				}
 				.description {
@@ -84,7 +103,10 @@
 					font-size: 16px;
 					text-transform: initial;
 					line-height: 1.5;
-					width: 368px;
+					color: #8491A0;
+				}
+				@include bp-1200 {
+					max-width: calc(33.33% - 20px);
 				}
 			}
 

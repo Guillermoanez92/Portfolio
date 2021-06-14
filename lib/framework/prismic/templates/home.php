@@ -23,12 +23,12 @@ echo "</pre>";
 	<h2><?php echo $data->work_history_header[0]->text ?></h2>
 	<div class="companies">
 		<?php foreach ($data->work_history_repeater as $key => $item) { ?>
-		<div class="company">
-			<h2>0<?php echo $key + 1 ?></h2>
-			<h4><?php echo $item->title_color[0]->text ?><span><?php echo $item->title[0]->text ?></span></h4>
-			<p class="description"><?php echo $item->copy[0]->text ?></p>
-		</div>
-	<?php } ?>
+			<div class="company">
+				<p class="eyebrow">0<?php echo $key + 1 ?></p>
+				<h4><span><?php echo $item->title_color[0]->text ?></span><?php echo $item->title[0]->text ?></h4>
+				<p class="description"><?php echo $item->copy[0]->text ?></p>
+			</div>
+		<?php } ?>
 	</div>
 </section>
 <section class="values">
