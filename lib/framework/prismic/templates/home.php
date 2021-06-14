@@ -14,7 +14,6 @@ echo "</pre>";
 	<img src="<?php echo $data->hero_image->url ?>" alt="personal pic">
 	<div class="copy">
 		<h1><?php echo $data->hero_header[0]->text ?></h1>
-		<h1 class="color"><?php echo $data->hero_header_color[0]->text ?></h1>
 		<p> <?php echo $data->hero_copy[0]->text ?></p>
 	</div>
 </section>
@@ -25,7 +24,7 @@ echo "</pre>";
 		<?php foreach ($data->work_history_repeater as $key => $item) { ?>
 			<div class="company">
 				<p class="eyebrow">0<?php echo $key + 1 ?></p>
-				<h4><span><?php echo $item->title_color[0]->text ?></span><?php echo $item->title[0]->text ?></h4>
+				<h4><?php echo $item->title[0]->text ?></h4>
 				<p class="description"><?php echo $item->copy[0]->text ?></p>
 			</div>
 		<?php } ?>
@@ -39,13 +38,13 @@ echo "</pre>";
 	<img src="<?php echo $data->values_image->url ?>" alt="values pic"/>
 </section>
 <section class="skillset">
-	<div class="copy">
+	<div class="left">
 		<h2><?php echo $data->skillset_header[0]->text ?></h2>
 		<p><?php echo $data->skillset_copy[0]->text ?></p>
 	</div>
-	<div class="skills">
+	<div class="right">
 		<?php foreach ($data->skillset_repeater as $key => $item) { ?>
-			<div class="single skills">
+			<div class="skill">
 				<img src=<?php echo $item->icon->url ?>>
 				<h4><?php echo $item->title[0]->text ?></h4>
 				<p><?php echo $item->copy[0]->text ?></p>

@@ -27,10 +27,7 @@
 				font-size: 78px;
 				line-height: 1.28;
 			}
-			.color{
-				color: #FFFFFF80;
 
-			}
 			p{
 				font-family: $senRegular;
 				font-size: 18px;
@@ -49,6 +46,7 @@
 			font-size: 16px;
 			font-family: $senBold;
 			margin-bottom: 8px;
+			line-height: 1.5;
 		}
 		h2 {
 			font-family: $senBold;
@@ -67,16 +65,15 @@
 				line-height: 1.2;
 				color: #8491A0;
 			}
-			h4 {
-				font-size: 24px;
-				font-family: $senBold;
-				margin-bottom: 22px;
-				line-height: 1.5;
-				color: #FFF;
-
-			}
 			.company {
 				max-width: calc(33.33% - 57px);
+				h4 {
+					font-size: 24px;
+					font-family: $senBold;
+					margin-bottom: 22px;
+					line-height: 1.5;
+					color: #FFF;
+				}
 				&:nth-child(1){
 					h4 {
 						span {
@@ -113,56 +110,107 @@
 
 		}
 	}
-}
-.values {
-	font-family: $senRegular;
-	display:flex;
-	height: 600px;
-	.copy {
-		width: 50%;
-		margin: 0 72px;
-		h2 {
-			font-family: $senBold;
-			font-size: 55px;
-			margin-bottom: 24px;
-		}
 
-		p {
-			max-width: 576px;
-			font-size: 18px;
-			margin-bottom: 282px;
-		}
-	}
-	img {
-		width: 720px;
+	.values {
+		font-family: $senRegular;
+		display:flex;
 		height: 600px;
-	}
-}
-.skillset{
-	display: flex;
+		width: 1440px;
+		.copy {
+			width: 50%;
+			background-color: #FFF3E4;
+			padding: 120px 72px 282px;
+			h2 {
+				font-family: $senBold;
+				font-size: 55px;
+				margin-bottom: 24px;
+				line-height: 1.2;
+			}
 
-}
-.logos {
-	display: flex;
-}
-.social {
-	display: flex;
-}
-.about {
-	display: flex;
-}
-.hobbies {
-	.all-hobby-images {
-		.hobby-images {
-			width: 400px;
-			height: 400px;
+			p {
+				max-width: 576px;
+				font-size: 18px;
+				line-height: 1.5;
+				color: #5B6876;
+			}
+			img {
+				width: 50%;
+			}
 		}
 	}
-}
-.contact {
-	display: flex;
-}
-.top {
-	justify-content: space-between;
-	display: flex;
+	.skillset{
+		padding: 120px 72px;
+		height: 664px;
+		display: flex;
+		.left {
+			margin-right:72px;
+			max-width: 36%;
+			h2 {
+				font-family: $senBold;
+				font-size: 55px;
+				line-height: 1.2;
+				color:#FFF;
+				margin-bottom: 24px;
+			}
+			p {
+				color: #8491A0;
+				line-height: 1.5;
+				font-family: $senRegular;
+				font-size: 18px;
+				padding-right: 48px;
+			}
+		}
+		.right {
+			padding-right: 72px;
+			justify-content: space-between;
+			display: grid;
+			grid: 1fr 1fr / 1fr 1fr;
+			grid-gap: 24px;
+
+			.skill {
+				margin-bottom: 48px;
+				img {
+					margin-bottom: 24px;
+				}
+				h4 {
+					color:#FFF;
+					font-family: $senBold;
+					font-size: 24px;
+					line-height: 0.6;
+					margin-bottom: 12px;
+				}
+				p {
+					font-family: $senRegular;
+					font-size: 16px;
+					line-height: 1.5;
+					color:#8491A0;
+				}
+			}
+		}
+
+	}
+	.logos {
+		display: flex;
+	}
+	.social {
+		display: flex;
+	}
+	.about {
+		display: flex;
+	}
+	.hobbies {
+		.all-hobby-images {
+			.hobby-images {
+				width: 400px;
+				height: 400px;
+			}
+		}
+	}
+	.contact {
+		display: flex;
+	}
+	.top {
+		justify-content: space-between;
+		display: flex;
+	}
 }
