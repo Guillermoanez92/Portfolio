@@ -54,21 +54,24 @@ echo "</pre>";
 </section>
 <section class="logos">
 	<?php foreach ($data->skillset2_repeater2 as $key => $item) { ?>
-	<div class="block">
-		<img src=<?php echo $item->icon->url ?>>
-	</div>
+		<div class="block">
+			<img src=<?php echo $item->icon->url ?>>
+		</div>
 	<?php } ?>
-
 </section>
 <section id="projects" class="projects">
-	<p><?php echo $data->projects_eyebrow[0]->text ?></p>
-	<h2><?php echo $data->projects_header[0]->text ?></h2>
-	<div class="projects grid">
+	<div class="copy">
+		<p><?php echo $data->projects_eyebrow[0]->text ?></p>
+		<h2><?php echo $data->projects_header[0]->text ?></h2>
+	</div>
+	<div class="grid">
 		<?php foreach ($data->projects_repeater as $key => $item) { ?>
-			<div class="single projects">
+			<div class="block">
 				<img src=<?php echo $item->icon->url ?>>
-				<h3><?php echo $item->title[0]->text ?></h3>
-				<p><?php echo $item->copy[0]->text ?></p>
+				<div class="copy">
+					<h3><?php echo $item->title[0]->text ?></h3>
+					<p><?php echo $item->copy[0]->text ?></p>
+				</div>
 			</div>
 		<?php } ?>
 	</div>
