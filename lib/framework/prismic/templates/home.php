@@ -52,11 +52,14 @@ echo "</pre>";
 		<?php } ?>
 	</div>
 </section>
-<div class="logos">
+<section class="logos">
 	<?php foreach ($data->skillset2_repeater2 as $key => $item) { ?>
+	<div class="block">
 		<img src=<?php echo $item->icon->url ?>>
+	</div>
 	<?php } ?>
-</div>
+
+</section>
 <section id="projects" class="projects">
 	<p><?php echo $data->projects_eyebrow[0]->text ?></p>
 	<h2><?php echo $data->projects_header[0]->text ?></h2>

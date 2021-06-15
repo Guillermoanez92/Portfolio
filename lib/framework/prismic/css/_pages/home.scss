@@ -138,13 +138,13 @@
 			}
 		}
 	}
-	.skillset{
+	.skillset {
 		padding: 120px 72px;
 		height: 664px;
 		display: flex;
 		.left {
-			margin-right:72px;
-			max-width: 36%;
+			margin-right: 24px;
+			padding-right: 76px;
 			h2 {
 				font-family: $senBold;
 				font-size: 55px;
@@ -157,18 +157,15 @@
 				line-height: 1.5;
 				font-family: $senRegular;
 				font-size: 18px;
-				padding-right: 48px;
+				width: 340px;
+				height: 135px;
 			}
 		}
 		.right {
-			padding-right: 72px;
-			justify-content: space-between;
 			display: grid;
 			grid: 1fr 1fr / 1fr 1fr;
-			grid-gap: 24px;
-
+			grid-gap: 48px 24px;
 			.skill {
-				margin-bottom: 48px;
 				img {
 					margin-bottom: 24px;
 				}
@@ -176,7 +173,7 @@
 					color:#FFF;
 					font-family: $senBold;
 					font-size: 24px;
-					line-height: 0.6;
+					line-height: 1.5;
 					margin-bottom: 12px;
 				}
 				p {
@@ -184,13 +181,24 @@
 					font-size: 16px;
 					line-height: 1.5;
 					color:#8491A0;
+					padding-right: 48px;
 				}
 			}
 		}
 
 	}
 	.logos {
+		outline: 1px red solid;
 		display: flex;
+		justify-content: space-between;
+		.block {
+			display: flex;
+			outline: 1px solid green;
+			width: 340px;
+			height: 140px;
+			justify-content: center;
+			align-items: center;
+		}
 	}
 	.social {
 		display: flex;
