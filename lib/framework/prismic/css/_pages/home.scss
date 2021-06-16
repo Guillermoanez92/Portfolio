@@ -201,10 +201,16 @@
 		}
 	}
 	.projects {
+		outline: red 1px solid;
 		height: 2200px;
 		padding: 120px 72px 150px;
+		display: grid;
+		grid-gap: 24px;
+		grid: 1fr 1fr 1fr/ 1fr 1fr;
+
 		.copy {
-			width: 572px;
+			grid-row: span -1;
+			outline: 1px solid red;
 			p {
 				text-transform: uppercase;
 				color: #8491A0;
@@ -222,59 +228,52 @@
 				margin-bottom: 80px;
 			}
 		}
-		.grid {
-			display: grid;
-			grid-gap: 24px;
-			grid: 1fr 1fr/ 1fr 1fr;
-			grid-template-rows: repeat(2, 10px);
-			.block {
-				background-color: #181823;
+		.block {
+			background-color: #181823;
+			img {
+				height: 620px;
 				width: 636px;
-				height: 830px;
-				img {
-					height: 620px;
-					width: 636px;
+			}
+			.copy {
+				padding: 40px 32px;
+				h3 {
+					font-family: $senBold;
+					font-size: 24px;
+					color: #FFF;
+					margin-bottom: 13px;
+					line-height: 1.5;
 				}
-				.copy {
-					padding: 40px 32px;
-					h3 {
-						font-family: $senBold;
-						font-size: 24px;
-						color: #FFF;
-						margin-bottom: 13px;
-						line-height: 1.5;
-					}
 
-					p {
-						font-family: $senRegular;
-						font-size: 18px;
-						text-transform: initial;
-						line-height: 1.5;
-					}
+				p {
+					font-family: $senRegular;
+					font-size: 18px;
+					text-transform: initial;
+					line-height: 1.5;
 				}
 			}
 		}
+	}
 
-	}
-	.social {
-		display: flex;
-	}
-	.about {
-		display: flex;
-	}
-	.hobbies {
-		.all-hobby-images {
-			.hobby-images {
-				width: 400px;
-				height: 400px;
-			}
+}
+.social {
+	display: flex;
+}
+.about {
+	display: flex;
+}
+.hobbies {
+	.all-hobby-images {
+		.hobby-images {
+			width: 400px;
+			height: 400px;
 		}
-	}
-	.contact {
-		display: flex;
-	}
-	.top {
-		justify-content: space-between;
-		display: flex;
 	}
 }
+.contact {
+	display: flex;
+}
+.top {
+	justify-content: space-between;
+	display: flex;
+}
+

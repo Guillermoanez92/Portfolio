@@ -60,11 +60,10 @@ echo "</pre>";
 	<?php } ?>
 </section>
 <section id="projects" class="projects">
-	<div class="copy">
-		<p><?php echo $data->projects_eyebrow[0]->text ?></p>
-		<h2><?php echo $data->projects_header[0]->text ?></h2>
-	</div>
-	<div class="grid">
+		<div class="copy">
+			<p><?php echo $data->projects_eyebrow[0]->text ?></p>
+			<h2><?php echo $data->projects_header[0]->text ?></h2>
+		</div>
 		<?php foreach ($data->projects_repeater as $key => $item) { ?>
 			<div class="block">
 				<img src=<?php echo $item->icon->url ?>>
@@ -74,7 +73,6 @@ echo "</pre>";
 				</div>
 			</div>
 		<?php } ?>
-	</div>
 </section>
 <section class="social-module">
 	<div class="left">
