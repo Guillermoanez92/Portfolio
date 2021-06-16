@@ -5,21 +5,25 @@
 -------------------------------------------------- */
 .view-home {
 	background-color: black;
+
 	.hero-section {
-		background: linear-gradient(to right,#000 40%,#181823 40% 60%);
+		background: linear-gradient(to right, #000 40%, #181823 40% 60%);
 		height: 814px;
 		display: flex;
+
 		img {
 			height: 650px;
 			width: 750px;
 			margin-top: 80px;
 		}
+
 		.copy {
 			position: absolute;
 			width: 738px;
 			height: 282px;
 			left: 662px;
 			top: 221px;
+
 			h1 {
 				color: white;
 				font-family: $senBold;
@@ -28,7 +32,7 @@
 				line-height: 1.28;
 			}
 
-			p{
+			p {
 				font-family: $senRegular;
 				font-size: 18px;
 				line-height: 1.5;
@@ -37,9 +41,11 @@
 			}
 		}
 	}
-	.work_history{
+
+	.work_history {
 		height: 715px;
 		padding: 120px 72px;
+
 		> p {
 			text-transform: uppercase;
 			color: #8491A0;
@@ -48,6 +54,7 @@
 			margin-bottom: 8px;
 			line-height: 1.5;
 		}
+
 		h2 {
 			font-family: $senBold;
 			color: #FFF;
@@ -55,18 +62,22 @@
 			line-height: 1.2;
 			width: 690px;
 		}
+
 		.companies {
 			display: flex;
 			justify-content: space-between;
 			margin-top: 40px;
+
 			.eyebrow {
 				font-family: $senRegular;
 				font-size: 117px;
 				line-height: 1.2;
 				color: #8491A0;
 			}
+
 			.company {
 				max-width: calc(33.33% - 57px);
+
 				h4 {
 					font-size: 24px;
 					font-family: $senBold;
@@ -74,27 +85,31 @@
 					line-height: 1.5;
 					color: #FFF;
 				}
-				&:nth-child(1){
+
+				&:nth-child(1) {
 					h4 {
 						span {
 							color: #3CC74E;
 						}
 					}
 				}
-				&:nth-child(2){
+
+				&:nth-child(2) {
 					h4 {
 						span {
-							color:#609BFF;
+							color: #609BFF;
 						}
 					}
 				}
-				&:nth-child(3){
+
+				&:nth-child(3) {
 					h4 {
 						span {
 							color: #E95D90;
 						}
 					}
 				}
+
 				.description {
 					font-family: $senRegular;
 					font-size: 16px;
@@ -102,6 +117,7 @@
 					line-height: 1.5;
 					color: #8491A0;
 				}
+
 				@include bp-1200 {
 					max-width: calc(33.33% - 20px);
 				}
@@ -113,13 +129,15 @@
 
 	.values {
 		font-family: $senRegular;
-		display:flex;
+		display: flex;
 		height: 600px;
 		width: 1440px;
+
 		.copy {
 			width: 50%;
 			background-color: #FFF3E4;
 			padding: 120px 72px 282px;
+
 			h2 {
 				font-family: $senBold;
 				font-size: 55px;
@@ -133,25 +151,30 @@
 				line-height: 1.5;
 				color: #5B6876;
 			}
+
 			img {
 				width: 50%;
 			}
 		}
 	}
+
 	.skillset {
 		padding: 120px 72px;
 		height: 664px;
 		display: flex;
+
 		.left {
 			margin-right: 24px;
 			padding-right: 76px;
+
 			h2 {
 				font-family: $senBold;
 				font-size: 55px;
 				line-height: 1.2;
-				color:#FFF;
+				color: #FFF;
 				margin-bottom: 24px;
 			}
+
 			p {
 				color: #8491A0;
 				line-height: 1.5;
@@ -161,37 +184,43 @@
 				height: 135px;
 			}
 		}
+
 		.right {
 			display: grid;
 			grid: 1fr 1fr / 1fr 1fr;
 			grid-gap: 48px 24px;
+
 			.skill {
 				img {
 					margin-bottom: 24px;
 				}
+
 				h4 {
-					color:#FFF;
+					color: #FFF;
 					font-family: $senBold;
 					font-size: 24px;
 					line-height: 1.5;
 					margin-bottom: 12px;
 				}
+
 				p {
 					font-family: $senRegular;
 					font-size: 16px;
 					line-height: 1.5;
-					color:#8491A0;
+					color: #8491A0;
 					padding-right: 48px;
 				}
 			}
 		}
 
 	}
+
 	.logos {
 		display: flex;
 		justify-content: space-between;
 		height: 140px;
 		border: 1px solid #181823;
+
 		.block {
 			display: flex;
 			width: 340px;
@@ -200,16 +229,12 @@
 			border-right: 1px solid #181823;
 		}
 	}
+
 	.projects {
 		outline: red 1px solid;
 		height: 2200px;
 		padding: 120px 72px 150px;
-		display: grid;
-		grid-gap: 24px;
-		grid: 1fr 1fr 1fr/ 1fr 1fr;
-
 		.copy {
-			grid-row: span -1;
 			outline: 1px solid red;
 			p {
 				text-transform: uppercase;
@@ -225,55 +250,120 @@
 				font-size: 55px;
 				color: #FFF;
 				line-height: 1.2;
-				margin-bottom: 80px;
+
 			}
 		}
-		.block {
-			background-color: #181823;
-			img {
-				height: 620px;
-				width: 636px;
-			}
-			.copy {
-				padding: 40px 32px;
-				h3 {
-					font-family: $senBold;
-					font-size: 24px;
-					color: #FFF;
-					margin-bottom: 13px;
-					line-height: 1.5;
+		.grid {
+			display: grid;
+			grid:1fr 1fr / 1fr 1fr;
+			gap: 24px;
+
+			.block {
+				background-color: #181823;
+				.copy {
+					padding: 40px 32px;
+					h3 {
+						font-family: $senBold;
+						font-size: 24px;
+						color: #FFF;
+						margin-bottom: 13px;
+						line-height: 1.5;
+					}
+
+					p {
+						font-family: $senRegular;
+						font-size: 18px;
+						text-transform: initial;
+						line-height: 1.5;
+					}
 				}
 
-				p {
-					font-family: $senRegular;
-					font-size: 18px;
-					text-transform: initial;
-					line-height: 1.5;
-				}
 			}
 		}
 	}
 
-}
-.social {
-	display: flex;
-}
-.about {
-	display: flex;
-}
-.hobbies {
-	.all-hobby-images {
-		.hobby-images {
-			width: 400px;
-			height: 400px;
+
+	.social-module {
+		display: flex;
+		background-color: #FBE4FF;
+		.left {
+			padding: 120px 72px;
+			h2 {
+				font-family: $senBold;
+				font-size: 55px;
+				line-height: 1.2;
+				margin-bottom: 24px;
+			}
+			p {
+				font-family: $senRegular;
+				font-size: 18px;
+				line-height: 1.5;
+				margin-bottom: 135px;
+				color: #5B6876;
+			}
+			a {
+				color: black;
+				margin-top: 135px;
+				font-family: $senRegular;
+				font-size: 16px;
+				line-height: 1.5;
+				border-bottom: 1px solid #8491A0;
+				padding-bottom: 4px;
+			}
 		}
 	}
-}
-.contact {
-	display: flex;
-}
-.top {
-	justify-content: space-between;
-	display: flex;
-}
 
+	.dribbble {
+		height:1250px;
+		.copy {
+			padding: 120px 622px 100px 180px;
+			h2 {
+				font-family: $senBold;
+				font-size: 55px;
+				line-height: 1.2;
+				color: #FFF;
+				margin-bottom: 24px;
+			}
+
+			p {
+				font-family: $senRegular;
+				line-height: 1.2;
+				color: #8491A0;
+				font-size: 18px;
+				margin-bottom: 40px;
+			}
+
+			a {
+				font-family: $senRegular;
+				font-size: 16px;
+				color: #FFF;;
+				border-bottom: 1px solid #8491A0;
+				padding-bottom: 4px;
+			}
+		}
+		img {
+			padding: 0px 140px 130px 220px;
+		}
+	}
+	.about {
+		display: flex;
+	}
+
+	.hobbies {
+		.all-hobby-images {
+			.hobby-images {
+				width: 400px;
+				height: 400px;
+			}
+		}
+	}
+
+	.contact {
+		display: flex;
+	}
+
+	.top {
+		justify-content: space-between;
+		display: flex;
+	}
+}

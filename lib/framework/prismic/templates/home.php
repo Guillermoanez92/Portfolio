@@ -60,10 +60,11 @@ echo "</pre>";
 	<?php } ?>
 </section>
 <section id="projects" class="projects">
-		<div class="copy">
-			<p><?php echo $data->projects_eyebrow[0]->text ?></p>
-			<h2><?php echo $data->projects_header[0]->text ?></h2>
-		</div>
+	<div class="copy">
+		<p><?php echo $data->projects_eyebrow[0]->text ?></p>
+		<h2><?php echo $data->projects_header[0]->text ?></h2>
+	</div>
+	<div class="grid">
 		<?php foreach ($data->projects_repeater as $key => $item) { ?>
 			<div class="block">
 				<img src=<?php echo $item->icon->url ?>>
@@ -73,6 +74,7 @@ echo "</pre>";
 				</div>
 			</div>
 		<?php } ?>
+	</div>
 </section>
 <section class="social-module">
 	<div class="left">
@@ -84,9 +86,11 @@ echo "</pre>";
 </section>
 
 <section class="dribbble">
-	<h2><?php echo $data->dribbble_header[0]->text ?></h2>
-	<p><?php echo $data->dribbble_copy[0]->text ?></p>
-	<a href="https://dribbble.com/guillermoanez92"><?php echo $data->dribbble_anchor_tag[0]->text ?></a>
+	<div class="copy">
+		<h2><?php echo $data->dribbble_header[0]->text ?></h2>
+		<p><?php echo $data->dribbble_copy[0]->text ?></p>
+		<a href="https://dribbble.com/guillermoanez92"><?php echo $data->dribbble_anchor_tag[0]->text ?></a>
+	</div>
 	<img src=<?php echo $data->dribbble_image->url?>>
 </section>
 
