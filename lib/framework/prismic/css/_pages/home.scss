@@ -355,13 +355,12 @@
 		}
 	}
 	.about {
-		outline: 1px deepskyblue dotted;
 		display: flex;
 		height: 2722px;
 		padding: 120px 72px;
-		
+
 		.left {
-			outline: 1px red solid;
+			margin-right: 72px;
 			h2 {
 				font-family: $senBold;
 				font-size: 55px;
@@ -380,12 +379,10 @@
 			width: 50%;
 			display: flex;
 			flex-direction: column;
-			outline: 1px green solid;
 			justify-content: space-between;
 			.review {
-				outline: red 1px dotted;
-
 				.copy {
+					border: 1px #5B6876 solid;
 					padding: 64px;
 					h4 {
 
@@ -403,6 +400,7 @@
 						line-height: 1.5;
 
 						&:last-child {
+							margin-top: 4px;
 							font-family: $senRegular;
 						}
 					}
