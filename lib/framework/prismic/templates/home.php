@@ -82,8 +82,11 @@ echo "</pre>";
 		<p><?php echo $data->social_copy[0]->text ?></p>
 		<a href="https://www.instagram.com/guillermo.anez/"><?php echo $data->social_anchor_tag[0]->text ?></a>
 	</div>
-	<img src=<?php echo $data->social_image->url ?>>
+	<div class="right">
+		<img src=<?php echo $data->social_image->url ?>>
+	</div>
 </section>
+
 
 <section class="dribbble">
 	<div class="copy">
@@ -99,13 +102,15 @@ echo "</pre>";
 		<h2><?php echo $data->reviews_header[0]->text ?></h2>
 		<p><?php echo $data->reviews_copy[0]->text ?></p>
 	</div>
-	<div class="reviews">
+	<div class="right">
 		<?php foreach ($data->reviews_repeater as $key => $item) { ?>
-			<div class="single reviews">
+			<div class="review">
 				<img src=<?php echo $item->icon->url ?>>
+				<div class="copy">
 				<h4><?php echo $item->copy[0]->text ?></h4>
 				<p class="employer"><?php echo $item->eyebrow1[0]->text ?></p>
 				<p><?php echo $item->eyebrow_2[0]->text ?></p>
+				</div>
 			</div>
 		<?php } ?>
 	</div>
