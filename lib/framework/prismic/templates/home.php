@@ -137,13 +137,13 @@ echo "</pre>";
 		<h2><?php echo $data->contact_header[0]->text ?></h2>
 		<p><?php echo $data->contact_copy[0]->text ?></p>
 	</div>
-	<div class="input-group">
+	<div class="right" class="input-group">
 		<div class="input-block">
 			<label>Name</label>
 			<input class="input validate" type="name"  name="customer[name]"  />
 		</div>
 		<div class="input-block">
-			<label>E-mail</label>
+			<label>Email</label>
 			<input class="input validate" type="email" name="customer[email]" />
 		</div>
 		<div class="input-block">

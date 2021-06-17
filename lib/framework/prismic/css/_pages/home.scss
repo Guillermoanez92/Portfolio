@@ -419,7 +419,50 @@
 	}
 
 	.contact {
+		outline: 1px solid red;
 		display: flex;
+		height: 730px;
+		padding:120px 180px;
+		.left {
+			width: 50%;
+			outline: 1px solid green;
+			h2 {
+				font-family: $senBold;
+				font-size: 55px;
+				line-height: 1.2;
+				color: #FFF;
+				margin-bottom: 24px;
+			}
+			p {
+				font-family: $senRegular;
+				font-size: 18px;
+				line-height: 1.5;
+				color: #8491A0;
+			}
+		}
+		.right {
+			margin-left: 24px;
+			width: 50%;
+			outline: 1px yellow solid;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			.input-block {
+				label {
+					color: #FFF;
+					font-family: $senRegular;
+					font-size: 16px;
+					line-height: 1.2;
+					margin-bottom: 8px;
+				}
+				input {
+					background-color: #181823;
+				}
+			}
+			button {
+				margin-top: 40px;
+			}
+		}
 	}
 
 	.top {
