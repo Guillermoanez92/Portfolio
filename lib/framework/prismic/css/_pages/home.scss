@@ -30,6 +30,10 @@
 				z-index: 1;
 				font-size: 78px;
 				line-height: 1.28;
+				span {
+					color:#FFFFFF80;
+
+				}
 			}
 
 			p {
@@ -88,7 +92,7 @@
 
 				&:nth-child(1) {
 					h4 {
-						spans {
+						span {
 							color: #3CC74E;
 						}
 					}
