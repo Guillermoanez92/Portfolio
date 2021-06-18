@@ -147,7 +147,7 @@ echo "</pre>";
 			<input class="input validate" type="email" name="customer[email]" />
 		</div>
 		<div class="input-block">
-			<label>Comments</label>
+			<label>Message</label>
 			<input class="input validate" type="text" name="customer[comments]" />
 		</div>
 		<button type="submit" class="button submit">Let's Get Started</button>
