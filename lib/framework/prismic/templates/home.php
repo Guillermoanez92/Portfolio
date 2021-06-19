@@ -60,7 +60,7 @@ echo "</pre>";
 	<?php } ?>
 </section>
 <section id="projects" class="projects">
-	<div class="copy">
+	<div class="heading">
 		<p><?php echo $data->projects_eyebrow[0]->text ?></p>
 		<h2><?php echo $data->projects_header[0]->text ?></h2>
 	</div>

@@ -5,15 +5,19 @@
 -------------------------------------------------- */
 .view-home {
 	background-color: black;
+	@include bp-1200 {
+		max-width: 100vw;
+	}
 
 	.hero-section {
 		background: linear-gradient(to right, #000 40%, #181823 40% 60%);
 		height: 814px;
 		display: flex;
+		padding-right: 40px;
 
 		img {
 			height: 650px;
-			width: 750px;
+			width: 50vw;
 			margin-top: 80px;
 		}
 
@@ -238,8 +242,10 @@
 		outline: red 1px solid;
 		height: 2200px;
 		padding: 120px 72px 150px;
-		.copy {
-			outline: 1px solid red;
+		.heading {
+			position: absolute;
+			outline: green 1px solid;
+			width: 40vw;
 			p {
 				text-transform: uppercase;
 				color: #8491A0;
@@ -259,13 +265,15 @@
 		}
 		.grid {
 			display: grid;
-			grid:1fr 1fr / 1fr 1fr;
+			grid: 1fr 1fr / 1fr 1fr;
 			gap: 24px;
 
 			.block {
 				background-color: #181823;
+				height: 830px;
 				.copy {
 					padding: 40px 32px;
+
 					h3 {
 						font-family: $senBold;
 						font-size: 24px;
@@ -279,6 +287,7 @@
 						font-size: 18px;
 						text-transform: initial;
 						line-height: 1.5;
+						color:  #8491A0;
 					}
 				}
 
@@ -423,7 +432,6 @@
 	}
 
 	.contact {
-		outline: 1px solid red;
 		display: flex;
 		height: 730px;
 		padding:120px 180px;
