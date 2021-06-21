@@ -1,4 +1,4 @@
-/* 	
+/*
 	CUSTOM RESET
 
 	- Global reset styles
@@ -8,6 +8,10 @@ body {
 	&.locked {
 
 	}
+}
+img {
+	width: 100%;
+	object-fit: cover;
 }
 
 a {

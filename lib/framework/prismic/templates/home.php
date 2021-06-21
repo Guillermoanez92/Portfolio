@@ -24,7 +24,7 @@ echo "</pre>";
 		<?php foreach ($data->work_history_repeater as $key => $item) { ?>
 			<div class="company">
 				<p class="eyebrow">0<?php echo $key + 1 ?></p>
-				<h4><span><?php echo $item->color1[0]->text ?></span><?php echo $item->title[0]->text ?></h4>
+				<?php echo RichText::asHtml($item->title); ?>
 				<p class="description"><?php echo $item->copy[0]->text ?></p>
 			</div>
 		<?php } ?>

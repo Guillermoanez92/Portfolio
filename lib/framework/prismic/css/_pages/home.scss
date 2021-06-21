@@ -11,28 +11,28 @@
 
 	.hero-section {
 		background: linear-gradient(to right, #000 40%, #181823 40% 60%);
-		height: 814px;
+		height: 100vh;
 		display: flex;
+		align-items: center;
 		padding-right: 40px;
+		position: relative;
 
 		img {
-			height: 650px;
-			width: 50vw;
+			height: 72%;
+			width: 52vw;
 			margin-top: 80px;
 		}
 
 		.copy {
 			position: absolute;
-			width: 738px;
-			height: 282px;
-			left: 662px;
-			top: 221px;
+			max-width: 51.25vw;
+			right: 40px;
 
 			h1 {
 				color: white;
 				font-family: $senBold;
 				z-index: 1;
-				font-size: 78px;
+				font-size: 5.4vw;
 				line-height: 1.28;
 				span {
 					color:#FFFFFF80;
@@ -51,7 +51,6 @@
 	}
 
 	.work_history {
-		height: 715px;
 		padding: 120px 72px;
 
 		> p {
@@ -68,7 +67,7 @@
 			color: #FFF;
 			font-size: 55px;
 			line-height: 1.2;
-			width: 690px;
+			max-width: 690px;
 		}
 
 		.companies {
@@ -92,11 +91,14 @@
 					margin-bottom: 22px;
 					line-height: 1.5;
 					color: #FFF;
+					strong {
+						font-weight: normal;
+					}
 				}
 
 				&:nth-child(1) {
 					h4 {
-						span {
+						strong {
 							color: #3CC74E;
 						}
 					}
@@ -104,7 +106,7 @@
 
 				&:nth-child(2) {
 					h4 {
-						span {
+						strong {
 							color: #609BFF;
 						}
 					}
@@ -112,7 +114,7 @@
 
 				&:nth-child(3) {
 					h4 {
-						span {
+						strong {
 							color: #E95D90;
 						}
 					}
@@ -138,9 +140,11 @@
 	.values {
 		font-family: $senRegular;
 		display: flex;
-		height: 600px;
-		width: 1440px;
 
+		img {
+			width: 50%;
+			min-height: 100%;
+		}
 		.copy {
 			width: 50%;
 			background-color: #FFF3E4;
@@ -168,7 +172,6 @@
 
 	.skillset {
 		padding: 120px 72px;
-		height: 664px;
 		display: flex;
 
 		.left {
@@ -188,8 +191,7 @@
 				line-height: 1.5;
 				font-family: $senRegular;
 				font-size: 18px;
-				width: 340px;
-				height: 135px;
+				max-width: 340px;
 			}
 		}
 
@@ -201,6 +203,7 @@
 			.skill {
 				img {
 					margin-bottom: 24px;
+					width: 35px;
 				}
 
 				h4 {
@@ -228,10 +231,12 @@
 		justify-content: space-between;
 		height: 140px;
 		border: 1px solid #181823;
-
+		img {
+			width: auto;
+		}
 		.block {
 			display: flex;
-			width: 340px;
+			width: 23.6vw;
 			justify-content: center;
 			align-items: center;
 			border-right: 1px solid #181823;
@@ -240,7 +245,6 @@
 
 	.projects {
 		outline: red 1px solid;
-		height: 2200px;
 		padding: 120px 72px 150px;
 		.heading {
 			position: absolute;
@@ -270,7 +274,6 @@
 
 			.block {
 				background-color: #181823;
-				height: 830px;
 				.copy {
 					padding: 40px 32px;
 
@@ -297,7 +300,6 @@
 
 
 	.social-module {
-		height: 600px;
 		display: flex;
 		background-color: #FBE4FF;
 
@@ -330,15 +332,23 @@
 		}
 		.right {
 			width: 50%;
+			min-height: 100%;
+			img {
+				height: 100%;
+			}
 		}
 	}
 
 	.dribbble {
-		height:1250px;
 		padding: 125px 0px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 		.copy {
-			padding-left: 182px;
 			margin-bottom: 105px;
+			padding-left: 12.6vw;
+			max-width: 44%;
+			margin-right: auto;
 			h2 {
 				font-family: $senBold;
 				font-size: 55px;
@@ -364,12 +374,12 @@
 			}
 		}
 		img {
-			padding-left: 220px;
+			width: 75%;
+			margin-left: 39px;
 		}
 	}
 	.about {
 		display: flex;
-		height: 2722px;
 		padding: 120px 72px;
 
 		.left {
@@ -425,15 +435,14 @@
 	.hobbies {
 		.all-hobby-images {
 			.hobby-images {
-				width: 400px;
-				height: 400px;
+				width: calc(25% - 18px);
+				// height: 400px;
 			}
 		}
 	}
 
 	.contact {
 		display: flex;
-		height: 730px;
 		padding:120px 180px;
 		.left {
 			width: 50%;
