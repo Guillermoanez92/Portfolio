@@ -13,7 +13,7 @@ echo "</pre>";
 <section class="hero-section">
 	<img src="<?php echo $data->hero_image->url ?>" alt="personal pic">
 	<div class="copy">
-		<h1><?php echo $data->hero_header[0]->text ?><span><?php echo $data->color[0]->text ?></span></h1>
+		<?php echo RichText::asHtml($data->hero_header); ?>
 		<p> <?php echo $data->hero_copy[0]->text ?></p>
 	</div>
 </section>
