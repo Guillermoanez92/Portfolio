@@ -226,7 +226,7 @@
 	}
 
 	.logos {
-		height: 20vh;
+		height: 19.5vh;
 		display: flex;
 		justify-content: space-between;
 		border: 1px solid #181823;
@@ -267,12 +267,11 @@
 			}
 		}
 		.grid {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: space-between;
-			width: calc(25% - 12px);
+
 			.block {
 				background-color: #181823;
+
+
 				.copy {
 					padding: 40px 32px;
 					h3 {
@@ -289,6 +288,7 @@
 						text-transform: initial;
 						line-height: 1.5;
 						color:  #8491A0;
+						max-width: 39vw;
 					}
 				}
 
@@ -307,13 +307,13 @@
 
 			h2 {
 				font-family: $senBold;
-				font-size: 55px;
+				font-size:3.8vw;
 				line-height: 1.2;
 				margin-bottom: 24px;
 			}
 			p {
 				font-family: $senRegular;
-				font-size: 18px;
+				font-size: 1.2vw;
 				line-height: 1.5;
 				margin-bottom: 135px;
 				color: #5B6876;
@@ -322,7 +322,7 @@
 				color: black;
 				margin-top: 135px;
 				font-family: $senRegular;
-				font-size: 16px;
+				font-size: 1.1vw;
 				line-height: 1.5;
 				border-bottom: 1px solid #8491A0;
 				padding-bottom: 4px;
@@ -349,7 +349,7 @@
 			margin-right: auto;
 			h2 {
 				font-family: $senBold;
-				font-size: 55px;
+				font-size:3.8vw;
 				line-height: 1.2;
 				color: #FFF;
 				margin-bottom: 24px;
@@ -359,14 +359,14 @@
 				font-family: $senRegular;
 				line-height: 1.2;
 				color: #8491A0;
-				font-size: 18px;
+				font-size: 1.2vw;
 				margin-bottom: 40px;
 			}
 
 			a {
 				font-family: $senRegular;
-				font-size: 16px;
-				color: #FFF;;
+				font-size: 1.1vw;
+				color: #FFF;
 				border-bottom: 1px solid #8491A0;
 				padding-bottom: 4px;
 			}
@@ -381,34 +381,35 @@
 		padding: 120px 72px;
 
 		.left {
+			width: 44vw;
 			margin-right: 72px;
 			h2 {
 				font-family: $senBold;
-				font-size: 55px;
+				font-size: 3.8vw;
 				line-height: 1.2;
 				color: #FFF;
 				margin-bottom: 24px;
 			}
 			p {
 				font-family: $senRegular;
-				font-size: 18px;
+				font-size: 1.2vw;
 				line-height: 1.5;
 				color: #8491A0;
 			}
 		}
 		.right {
-			width: 50%;
+			width: 44vw;
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
+			gap: 120px;
 			.review {
 				.copy {
 					border: 1px #5B6876 solid;
 					padding: 64px;
 					h4 {
-
 						font-family: $senBold;
-						font-size: 24px;
+						font-size: 1.6vw;
 						line-height: 1.2;
 						color: #FFF;
 						margin-bottom: 64px;
@@ -417,7 +418,7 @@
 					p {
 						color: #5B6876;
 						font-family: $senBold;
-						font-size: 18px;
+						font-size: 1.2vw;
 						line-height: 1.5;
 
 						&:last-child {
@@ -443,24 +444,24 @@
 		display: flex;
 		padding:120px 180px;
 		.left {
-			width: 50%;
+			width: 37vw;
 			h2 {
 				font-family: $senBold;
-				font-size: 55px;
+				font-size: 3.8vw;
 				line-height: 1.2;
 				color: #FFF;
 				margin-bottom: 24px;
 			}
 			p {
 				font-family: $senRegular;
-				font-size: 18px;
+				font-size: 1.2vw;
 				line-height: 1.5;
 				color: #8491A0;
 			}
 		}
 		.right {
 			margin-left: 24px;
-			width: 50%;
+			width: 36.5vw;
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
@@ -471,16 +472,16 @@
 				label {
 					color: #FFF;
 					font-family: $senRegular;
-					font-size: 16px;
+					font-size: 1.1vw;
 					line-height: 1.2;
 					margin-bottom: 8px;
 				}
 				input {
 					border: 1px #181823 solid;
 					background-color: #181823;
-					height: 50px;
+					height: 6.9vh;
 					font-family: $senRegular;
-					font-size: 16px;
+					font-size: 1.1vw;
 					color:#FFF;
 					&:focus {
 						background-color: #FFF;
@@ -488,16 +489,16 @@
 					}
 				}
 				input[type=text] {
-					height: 100px;
+					height: 13.9vh;
 				}
 
 			}
 			button {
-				height: 75px;
+				height: 10vh;
 				color: #FFF;
 				text-transform: uppercase;
 				font-family: $senBold;
-				font-size: 18px;
+				font-size: 1.2vw;
 				line-height: 1.5;
 				margin-top: 40px;
 				background-color: #5221E6;
