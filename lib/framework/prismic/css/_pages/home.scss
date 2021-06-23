@@ -7,6 +7,7 @@
 	background-color: #000;
 	@include bp-1200 {
 		max-width: 100vw;
+
 	}
 
 	.hero-section {
@@ -47,11 +48,29 @@
 				color: #FFFFFF;
 			}
 		}
+		@include bp-1200 {
+			background: #000;
+			.copy {
+				h1 {
+					font-size: 7.2vw;
+					line-height: 1.19;
+				}
+
+				p {
+					font-size: 2.3vw;
+					line-height: 1.5;
+				}
+			}
+		}
 	}
 
 	.work_history {
 		padding: 120px 72px;
 		height: 100vh;
+		@include bp-1200 {
+			height: 73vh;
+			padding: 80px 40px;
+		}
 
 		> p {
 			text-transform: uppercase;
@@ -60,6 +79,10 @@
 			font-family: $senBold;
 			margin-bottom: 8px;
 			line-height: 1.5;
+			@include bp-1200 {
+				font-size: 2vw;
+				line-height: 1.5;
+			}
 		}
 
 		h2 {
@@ -68,6 +91,11 @@
 			font-size: 3.8vw;
 			line-height: 1.2;
 			max-width: 48vw;
+			@include bp-1200 {
+				font-size: 7.1vw;
+				line-height: 1.2;
+				max-width: 100vw;
+			}
 		}
 
 		.companies {
@@ -75,15 +103,20 @@
 			justify-content: space-between;
 			margin-top: 40px;
 
+
 			.eyebrow {
 				font-family: $senRegular;
 				font-size: 8.12vw;
 				line-height: 1.2;
 				color: #8491A0;
+				@include bp-1200 {
+					font-size: 15vw;
+				}
 			}
 
 			.company {
 				max-width: calc(33.33% - 57px);
+
 
 				h4 {
 					font-size: 24px;
@@ -93,6 +126,10 @@
 					color: #FFF;
 					strong {
 						font-weight: normal;
+					}
+					@include bp-1200 {
+						line-height: 1.2;
+						font-size: 3vw;
 					}
 				}
 
@@ -126,10 +163,14 @@
 					text-transform: initial;
 					line-height: 1.5;
 					color: #8491A0;
+					@include bp-1200 {
+						font-size: 2vw;
+					}
 				}
 
 				@include bp-1200 {
-					max-width: calc(33.33% - 20px);
+					max-width: calc(33.33% - 16px);
+					height:36vh;
 				}
 			}
 
@@ -152,6 +193,9 @@
 				font-size: 3.8vw;
 				margin-bottom: 24px;
 				line-height: 1.2;
+				@include bp-1200 {
+					font-size: 7.1vw;
+				}
 			}
 
 			p {
@@ -159,6 +203,12 @@
 				font-size:1.2vw;
 				line-height: 1.5;
 				color: #5B6876;
+				@include bp-1200 {
+					font-size:2.3vw;
+				}
+			}
+			@include bp-1200 {
+				padding: 80px 40px;
 			}
 		}
 		img {
@@ -170,6 +220,11 @@
 	.skillset {
 		padding: 120px 72px;
 		display: flex;
+		@include bp-1200 {
+			flex-direction: column;
+			gap: 4.6vh;
+			padding: 80px 40px;
+		}
 
 
 		.left {
@@ -183,6 +238,9 @@
 				line-height: 1.2;
 				color: #FFF;
 				margin-bottom: 24px;
+				@include bp-1200 {
+					font-size: 7vw;
+				}
 			}
 
 			p {
@@ -191,6 +249,10 @@
 				font-family: $senRegular;
 				font-size: 1.2vw;
 				max-width: 24vw;
+				@include bp-1200 {
+					max-width: 100vw;
+					font-size: 2.3vw;
+				}
 			}
 		}
 
@@ -202,6 +264,10 @@
 				img {
 					margin-bottom: 24px;
 					width: 2.4vw;
+					@include bp-1200 {
+						width: 3.2vw;
+						height: 3vh;
+					}
 				}
 
 				h4 {
@@ -210,6 +276,9 @@
 					font-size: 1.6vw;
 					line-height: 1.5;
 					margin-bottom: 12px;
+					@include bp-1200 {
+						font-size: 3vw;
+					}
 				}
 
 				p {
@@ -218,6 +287,9 @@
 					line-height: 1.5;
 					color: #8491A0;
 					padding-right: 48px;
+					@include bp-1200 {
+						font-size: 2vw;
+					}
 				}
 			}
 		}
