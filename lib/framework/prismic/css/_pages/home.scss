@@ -11,16 +11,15 @@
 
 	.hero-section {
 		background: linear-gradient(to right, #000 40%, #181823 40% 60%);
-		height: 100vh;
 		display: flex;
 		align-items: center;
 		padding-right: 40px;
 		position: relative;
 
 		img {
-			height: 72%;
+			height: 90.9vh;
 			width: 52vw;
-			margin-top: 80px;
+			margin: 80px 0px;
 		}
 
 		.copy {
@@ -244,7 +243,7 @@
 
 	.projects {
 		outline: red 1px solid;
-		padding: 120px 72px 150px;
+		padding: 150px 72px;
 		.heading {
 			position: absolute;
 			outline: green 1px solid;
@@ -267,11 +266,14 @@
 			}
 		}
 		.grid {
+			display: flex;
+			justify-content: space-between;
+			flex-flow: row wrap;
+
 
 			.block {
+				flex-basis: 100%;
 				background-color: #181823;
-
-
 				.copy {
 					padding: 40px 32px;
 					h3 {
