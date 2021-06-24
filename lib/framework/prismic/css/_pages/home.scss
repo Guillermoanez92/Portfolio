@@ -183,6 +183,7 @@
 		display: flex;
 
 
+
 		.copy {
 			width: 50%;
 			background-color: #FFF3E4;
@@ -265,8 +266,8 @@
 					margin-bottom: 24px;
 					width: 2.4vw;
 					@include bp-1200 {
-						width: 3.2vw;
-						height: 3vh;
+						width: 4.4vw;
+						height: 3.4vh;
 					}
 				}
 
@@ -297,7 +298,6 @@
 	}
 
 	.logos {
-		height: 19.5vh;
 		display: flex;
 		justify-content: space-between;
 		border: 1px solid #181823;
@@ -309,6 +309,14 @@
 			border-right: 1px solid #181823;
 			img {
 				width: auto;
+			}
+			@include bp-1200 {
+				display: flex;
+				flex-direction: row;
+				height: 14.5vh;
+				min-width: 50vw;
+				border-bottom:  1px solid #181823;
+				border-right:  1px solid #181823;
 			}
 		}
 	}
@@ -378,12 +386,19 @@
 		.left {
 			padding: 120px 72px;
 			width: 50%;
+			@include bp-1200 {
+				padding: 80px 40px;
+				width: 50%;
+			}
 
 			h2 {
 				font-family: $senBold;
 				font-size:3.8vw;
 				line-height: 1.2;
 				margin-bottom: 24px;
+				@include bp-1200 {
+					font-size: 5.3vw;
+				}
 			}
 			p {
 				font-family: $senRegular;
@@ -391,6 +406,10 @@
 				line-height: 1.5;
 				margin-bottom: 135px;
 				color: #5B6876;
+				@include bp-1200 {
+					font-size: 1.7VW;
+					width: 30vw;
+				}
 			}
 			a {
 				color: black;
@@ -400,14 +419,22 @@
 				line-height: 1.5;
 				border-bottom: 1px solid #8491A0;
 				padding-bottom: 4px;
+				@include bp-1200 {
+					font-size: 1.5vw;
+				}
 			}
 		}
 		.right {
 			width: 50%;
 			min-height: 100%;
+			@include bp-1200 {
+				width: 50%;
+			}
 			img {
 				height: 100%;
+
 			}
+
 		}
 	}
 
@@ -416,17 +443,28 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		@include bp-1200 {
+			align-items: center;
+			padding: 80px 40px;
+		}
 		.copy {
 			margin-bottom: 105px;
 			padding-left: 12.6vw;
 			max-width: 44%;
 			margin-right: auto;
+			@include bp-1200 {
+				padding-left: 0px;
+			}
 			h2 {
 				font-family: $senBold;
 				font-size:3.8vw;
 				line-height: 1.2;
 				color: #FFF;
 				margin-bottom: 24px;
+				@include bp-1200 {
+					font-size: 5.3vw;
+
+				}
 			}
 
 			p {
@@ -435,6 +473,10 @@
 				color: #8491A0;
 				font-size: 1.2vw;
 				margin-bottom: 40px;
+				@include bp-1200 {
+					font-size: 1.7vw;
+					width: 67vw;
+				}
 			}
 
 			a {
@@ -443,11 +485,19 @@
 				color: #FFF;
 				border-bottom: 1px solid #8491A0;
 				padding-bottom: 4px;
+				@include bp-1200 {
+					font-size: 1.5vw;
+				}
 			}
 		}
 		img {
 			width: 75%;
 			margin-left: 39px;
+			@include bp-1200 {
+				margin-left:0px;
+				width: 89vw;
+				height: 50vh;
+			}
 		}
 	}
 	.about {
