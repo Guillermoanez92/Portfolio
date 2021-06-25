@@ -301,6 +301,11 @@
 		display: flex;
 		justify-content: space-between;
 		border: 1px solid #181823;
+		width: 100vw;
+		@include bp-1200 {
+			flex-wrap: wrap;
+			justify-content: initial;
+		}
 		.block {
 			display: flex;
 			width: 23.6vw;
@@ -311,10 +316,8 @@
 				width: auto;
 			}
 			@include bp-1200 {
-				display: flex;
-				flex-direction: row;
 				height: 14.5vh;
-				min-width: 50vw;
+				width: 49.8vw;
 				border-bottom:  1px solid #181823;
 				border-right:  1px solid #181823;
 			}
@@ -324,10 +327,17 @@
 	.projects {
 		outline: red 1px solid;
 		padding: 150px 72px;
+		@include bp-1200 {
+			padding: 21px 40px 130px;
+		}
 		.heading {
 			position: absolute;
 			outline: green 1px solid;
 			width: 40vw;
+			@include bp-1200 {
+				position: relative;
+				margin-bottom: 80px;
+			}
 			p {
 				text-transform: uppercase;
 				color: #8491A0;
@@ -335,6 +345,9 @@
 				font-size: 1.1vw;
 				line-height: 1.5;
 				margin-bottom: 8px;
+				@include bp-1200 {
+					font-size: 2vw;
+				}
 			}
 
 			h2 {
@@ -342,6 +355,10 @@
 				font-size: 3.8vw;
 				color: #FFF;
 				line-height: 1.2;
+				@include bp-1200 {
+					font-size: 7.1vw;
+					width: 89.5vw;
+				}
 
 			}
 		}
@@ -349,19 +366,33 @@
 			display: flex;
 			justify-content: space-between;
 			flex-flow: row wrap;
+			@include bp-1200{
+				gap: 48px;
+			}
 
 
 			.block {
-				flex-basis: 100%;
-				background-color: #181823;
+				outline: 1px blue solid;
+				@include bp-1200 {
+					width: 89vw;
+				}
 				.copy {
+					background-color: #181823;
 					padding: 40px 32px;
+					height: 29vh;
+					@include bp-1200 {
+						height: 21vh;
+					}
+
 					h3 {
 						font-family: $senBold;
 						font-size: 24px;
 						color: #FFF;
 						margin-bottom: 13px;
 						line-height: 1.5;
+						@include bp-1200 {
+							font-size:3.1vw;
+						}
 					}
 
 					p {
@@ -370,7 +401,15 @@
 						text-transform: initial;
 						line-height: 1.5;
 						color:  #8491A0;
-						max-width: 39vw;
+						width: 39vw;
+						outline: 1px green solid;
+						@include bp-1200 {
+							font-size:2.3vw;
+							width: initial;
+						}
+					}
+					img {
+						height: 86vh;
 					}
 				}
 
@@ -503,22 +542,35 @@
 	.about {
 		display: flex;
 		padding: 120px 72px;
+		@include bp-1200 {
+			padding: 80px 40px;
+		}
 
 		.left {
 			width: 44vw;
 			margin-right: 72px;
+			@include bp-1200 {
+				width: 50%;
+				margin-right: 23px;
+			}
 			h2 {
 				font-family: $senBold;
 				font-size: 3.8vw;
 				line-height: 1.2;
 				color: #FFF;
 				margin-bottom: 24px;
+				@include bp-1200 {
+					font-size: 7.1vw;
+				}
 			}
 			p {
 				font-family: $senRegular;
 				font-size: 1.2vw;
 				line-height: 1.5;
 				color: #8491A0;
+				@include bp-1200 {
+					font-size: 2.3vw;
+				}
 			}
 		}
 		.right {
@@ -528,15 +580,24 @@
 			justify-content: space-between;
 			gap: 120px;
 			.review {
+				@include bp-1200 {
+					width: 44vw;
+				}
 				.copy {
 					border: 1px #5B6876 solid;
 					padding: 64px;
+					@include bp-1200 {
+						padding: 32px;
+					}
 					h4 {
 						font-family: $senBold;
 						font-size: 1.6vw;
 						line-height: 1.2;
 						color: #FFF;
 						margin-bottom: 64px;
+						@include bp-1200 {
+							font-size: 3.2vw;
+						}
 					}
 
 					p {
@@ -544,10 +605,18 @@
 						font-family: $senBold;
 						font-size: 1.2vw;
 						line-height: 1.5;
+						@include bp-1200 {
+							font-size: 2.3vw;
+						}
 
 						&:last-child {
 							margin-top: 4px;
 							font-family: $senRegular;
+						}
+					}
+					img {
+						@include bp-1200 {
+							background-size: cover;
 						}
 					}
 				}
@@ -567,20 +636,33 @@
 	.contact {
 		display: flex;
 		padding:120px 180px;
+		@include bp-1200 {
+			padding: 80px 40px;
+			gap: 24px;
+		}
 		.left {
 			width: 37vw;
+			@include bp-1200 {
+				width: 43vw;
+			}
 			h2 {
 				font-family: $senBold;
 				font-size: 3.8vw;
 				line-height: 1.2;
 				color: #FFF;
 				margin-bottom: 24px;
+				@include bp-1200 {
+					font-size: 7.1vw;
+				}
 			}
 			p {
 				font-family: $senRegular;
 				font-size: 1.2vw;
 				line-height: 1.5;
 				color: #8491A0;
+				@include bp-1200 {
+					font-size: 2.3vw;
+				}
 			}
 		}
 		.right {
@@ -589,9 +671,14 @@
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
+			@include bp-1200 {
+				width: 43vw;
+				gap: 40px;
+			}
 			.input-block {
 				display: flex;
 				flex-direction: column;
+
 
 				label {
 					color: #FFF;
@@ -599,6 +686,9 @@
 					font-size: 1.1vw;
 					line-height: 1.2;
 					margin-bottom: 8px;
+					@include bp-1200 {
+						font-size: 2vw;
+					}
 				}
 				input {
 					border: 1px #181823 solid;
@@ -610,6 +700,9 @@
 					&:focus {
 						background-color: #FFF;
 						color: #181823;
+					}
+					@include bp-1200 {
+						height: 4.8vh;
 					}
 				}
 				input[type=text] {
@@ -632,8 +725,4 @@
 		}
 	}
 
-	.top {
-		justify-content: space-between;
-		display: flex;
-	}
 }
