@@ -377,10 +377,11 @@
 				outline: 1px blue solid;
 				flex: 0 0 22vw;
 				&:first-child {
-					margin-top:250px;
+					margin-top: 250px;
 				}
-				
-
+				&:nth-child(2) {
+					margin-bottom: 24px;
+				}
 				@include bp-1200 {
 					width: 89vw;
 					flex: unset;
