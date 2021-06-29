@@ -7,8 +7,8 @@
 	background-color: #000;
 	@include bp-1200 {
 		max-width: 100vw;
-
 	}
+
 
 	.hero-section {
 		background: linear-gradient(to right, #000 40%, #181823 40% 60%);
@@ -17,10 +17,11 @@
 		padding-right: 40px;
 		position: relative;
 
+
 		img {
 			height: 90.9vh;
 			width: 52vw;
-			margin: 80px 0px;
+			margin: 80px 0;
 		}
 
 		.copy {
@@ -49,7 +50,9 @@
 			}
 		}
 		@include bp-1200 {
-			background: #000;
+			.hero-section {
+				background: #000;
+			}
 			.copy {
 				h1 {
 					font-size: 7.2vw;
@@ -61,16 +64,43 @@
 					line-height: 1.5;
 				}
 			}
+
+		}
+	}
+
+	@include bp-767 {
+		.hero-section {
+			flex-direction: column;
+			background: #000;
+			padding-right: unset;
+			img {
+				width: 100vw;
+				height: 35vh;
+				margin: unset;
+			}
+			.copy{
+				position: relative;
+
+				h1 {
+					width: 85vw;
+					margin-bottom: 16px;
+					line-height: 1.2;
+					font-size: 8.8vw;
+					height: 14.4vh;
+				}
+				p {
+					width:85vw;
+					line-height: 1.5;
+					font-size: 5vw;
+					height: 16vh;
+				}
+			}
 		}
 	}
 
 	.work_history {
 		padding: 120px 72px;
 		height: 100vh;
-		@include bp-1200 {
-			height: 73vh;
-			padding: 80px 40px;
-		}
 
 		> p {
 			text-transform: uppercase;
@@ -79,10 +109,7 @@
 			font-family: $senBold;
 			margin-bottom: 8px;
 			line-height: 1.5;
-			@include bp-1200 {
-				font-size: 2vw;
-				line-height: 1.5;
-			}
+
 		}
 
 		h2 {
@@ -91,11 +118,7 @@
 			font-size: 3.8vw;
 			line-height: 1.2;
 			max-width: 48vw;
-			@include bp-1200 {
-				font-size: 7.1vw;
-				line-height: 1.2;
-				max-width: 100vw;
-			}
+
 		}
 
 		.companies {
@@ -109,9 +132,7 @@
 				font-size: 8.12vw;
 				line-height: 1.2;
 				color: #8491A0;
-				@include bp-1200 {
-					font-size: 15vw;
-				}
+
 			}
 
 			.company {
@@ -127,10 +148,7 @@
 					strong {
 						font-weight: normal;
 					}
-					@include bp-1200 {
-						line-height: 1.2;
-						font-size: 3vw;
-					}
+
 				}
 
 				&:nth-child(1) {
@@ -163,58 +181,127 @@
 					text-transform: initial;
 					line-height: 1.5;
 					color: #8491A0;
-					@include bp-1200 {
-						font-size: 2vw;
-					}
+
 				}
 
-				@include bp-1200 {
-					max-width: calc(33.33% - 16px);
-					height:36vh;
-				}
+
 			}
 
-
 		}
+		@include bp-1200 {
+			padding: 80px 40px;
+			height: 73vh;
+			p {
+				font-size: 2vw;
+				line-height: 1.5;
+			}
+			h2 {
+				font-size: 7.1vw;
+				max-width: 100vw;
+				line-height: 1.2;
+			}
+			.companies {
+				.company {
+					max-width: calc(33.33% - 16px);
+					height: 36vh;
+					.eyebrow {
+						font-size: 15vw;
+					}
+					h4 {
+						font-size: 3vw;
+					}
+					.description {
+						font-size: 2vw;
+						line-height: 1.5;
+					}
+				}
+			}
+		}
+		@include bp-767 {
+			padding: 48px 20px;
+			height: 150vh;
+			p {
+				font-size: 4.2vw;
+			}
+			h2 {
+				font-size: 8.4vw;
+				margin-bottom: 40px;
+			}
+			.companies {
+				flex-direction: column;
+				gap: 40px;
+				.company {
+
+					.eyebrow {
+						font-size: 31vw;
+					}
+					h4 {
+						font-size: 6.4vw;
+						width:85vw;
+					}
+					.description {
+						font-size: 4.2vw;
+						width: 85vw;
+					}
+				}
+			}
+		}
+
 	}
 
 	.values {
 		font-family: $senRegular;
 		display: flex;
-
-
-
 		.copy {
 			width: 50%;
 			background-color: #FFF3E4;
 			padding: 120px 72px 282px;
-
 			h2 {
 				font-family: $senBold;
 				font-size: 3.8vw;
 				margin-bottom: 24px;
 				line-height: 1.2;
-				@include bp-1200 {
-					font-size: 7.1vw;
-				}
 			}
-
 			p {
 				width: 40vw;
 				font-size:1.2vw;
 				line-height: 1.5;
 				color: #5B6876;
-				@include bp-1200 {
-					font-size:2.3vw;
-				}
-			}
-			@include bp-1200 {
-				padding: 80px 40px;
 			}
 		}
 		img {
 			width: 50%;
 			min-height: 100%;
+		}
+		@include bp-1200 {
+			.copy {
+				padding: 80px 40px;
+				h2 {
+					font-size: 7.1vw;
+				}
+				p {
+					font-size:2.3vw;
+				}
+			}
+		}
+		@include bp-767 {
+			flex-direction: column;
+			.copy {
+				width: 100vw;
+				padding: 48px 20px;
+				h2 {
+					font-size: 8.5vw;
+				}
+				p {
+					font-size:4.8vw;
+					width: 85vw;
+					margin-bottom: 120px;
+				}
+			}
+			img {
+				width: 100vw;
+				height: 55vh;
+			}
 		}
 	}
 
@@ -378,6 +465,9 @@
 				flex: 0 0 22vw;
 				&:first-child {
 					margin-top: 250px;
+					@include bp-1200 {
+						margin-top: unset;
+					}
 				}
 				&:nth-child(2) {
 					margin-bottom: 24px;
