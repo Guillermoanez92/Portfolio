@@ -661,6 +661,32 @@
 				width: 50%;
 			}
 		}
+		@include bp-767 {
+			flex-direction: column;
+			.left {
+				padding: 48px 20px;
+				width: 100%;
+				h2 {
+					font-size: 32px;
+					line-height: 1.18;
+					margin-bottom: 16px;
+				}
+				p {
+					line-height: 1.5;
+					font-size: 18px;
+					width: 100%;
+					margin-bottom: 125px;
+				}
+				a {
+					font-size: 16px;
+					line-height: 1.5;
+				}
+			}
+			.right {
+				height: auto;
+				width: 100%;
+			}
+		}
 	}
 
 	.dribbble {
@@ -668,28 +694,18 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		@include bp-1200 {
-			align-items: center;
-			padding: 80px 40px;
-		}
 		.copy {
 			margin-bottom: 105px;
 			padding-left: 12.6vw;
 			max-width: 44%;
 			margin-right: auto;
-			@include bp-1200 {
-				padding-left: 0px;
-			}
+
 			h2 {
 				font-family: $senBold;
 				font-size:3.8vw;
 				line-height: 1.2;
 				color: #FFF;
 				margin-bottom: 24px;
-				@include bp-1200 {
-					font-size: 5.3vw;
-
-				}
 			}
 
 			p {
@@ -698,10 +714,6 @@
 				color: #8491A0;
 				font-size: 1.2vw;
 				margin-bottom: 40px;
-				@include bp-1200 {
-					font-size: 1.7vw;
-					width: 67vw;
-				}
 			}
 
 			a {
@@ -710,53 +722,74 @@
 				color: #FFF;
 				border-bottom: 1px solid #8491A0;
 				padding-bottom: 4px;
-				@include bp-1200 {
-					font-size: 1.5vw;
-				}
 			}
 		}
 		img {
 			width: 75%;
 			margin-left: 39px;
-			@include bp-1200 {
+		}
+		@include bp-1200 {
+			align-items: center;
+			padding: 80px 40px;
+			.copy {
+				padding-left: 0px;
+				h2 {
+					font-size: 5.3vw;
+				}
+				p {
+					font-size: 1.7vw;
+					width: 100%;
+				}
+				a {
+					font-size: 1.5vw;
+				}
+			}
+			img {
 				margin-left:0px;
 				width: 89vw;
 				height: 50vh;
+			}
+		}
+		@include bp-767 {
+			padding: 64px 20px;
+			.copy {
+				padding-left: unset;
+				max-width: 100%;
+				margin-bottom: 64px;
+				h2 {
+					font-size: 55px;
+					line-height: 1.12;
+				}
+				p {
+					font-size: 18px;
+					line-height: 1.2;
+					margin-bottom: 40px;
+				}
+				a {
+					font-size: 16px;
+					line-height: 1.5;
+				}
 			}
 		}
 	}
 	.about {
 		display: flex;
 		padding: 120px 72px;
-		@include bp-1200 {
-			padding: 80px 40px;
-		}
-
 		.left {
 			width: 44vw;
 			margin-right: 72px;
-			@include bp-1200 {
-				width: 50%;
-				margin-right: 23px;
-			}
 			h2 {
 				font-family: $senBold;
 				font-size: 3.8vw;
 				line-height: 1.2;
 				color: #FFF;
 				margin-bottom: 24px;
-				@include bp-1200 {
-					font-size: 7.1vw;
-				}
 			}
 			p {
 				font-family: $senRegular;
 				font-size: 1.2vw;
 				line-height: 1.5;
 				color: #8491A0;
-				@include bp-1200 {
-					font-size: 2.3vw;
-				}
 			}
 		}
 		.right {
@@ -766,24 +799,15 @@
 			justify-content: space-between;
 			gap: 120px;
 			.review {
-				@include bp-1200 {
-					width: 44vw;
-				}
 				.copy {
 					border: 1px #5B6876 solid;
 					padding: 64px;
-					@include bp-1200 {
-						padding: 32px;
-					}
 					h4 {
 						font-family: $senBold;
 						font-size: 1.6vw;
 						line-height: 1.2;
 						color: #FFF;
 						margin-bottom: 64px;
-						@include bp-1200 {
-							font-size: 3.2vw;
-						}
 					}
 
 					p {
@@ -791,18 +815,82 @@
 						font-family: $senBold;
 						font-size: 1.2vw;
 						line-height: 1.5;
-						@include bp-1200 {
-							font-size: 2.3vw;
-						}
 
 						&:last-child {
 							margin-top: 4px;
 							font-family: $senRegular;
 						}
 					}
+
+				}
+			}
+		}
+		@include bp-1200 {
+			padding: 80px 40px;
+			.left {
+				width: 100%;
+				margin-right: 23px;
+				h2 {
+					font-size: 7.1vw;
+				}
+				p {
+					font-size: 2.3vw;
+				}
+
+			}
+			.right {
+				width: 100%;
+				gap:48px;
+				.review {
+					width: 100%;
+					height: auto;
 					img {
-						@include bp-1200 {
+						height: auto;
+					}
+					.copy {
+						padding: 32px;
+						h4 {
+							font-size: 3.2vw;
+						}
+						p {
+							font-size: 2.3vw;
+						}
+						img {
 							background-size: cover;
+						}
+
+					}
+				}
+			}
+		}
+		@include bp-767 {
+			padding: 48px 20px;
+			flex-direction: column;
+
+			.left {
+				margin-bottom: 40px;
+				h2 {
+					font-size: 32px;
+					line-height: 1.2;
+					margin-bottom: 16px;
+				}
+				p {
+					font-size: 18px;
+					line-height: 1.5;
+				}
+			}
+			.right {
+				.review {
+					height: auto;
+					.copy {
+						padding: 32px;
+						h4 {
+							font-size: 24px;
+							line-height: 1.5;
+						}
+						p{
+							font-size: 18px;
+							line-height: 1.5;
 						}
 					}
 				}
@@ -822,33 +910,20 @@
 	.contact {
 		display: flex;
 		padding:120px 180px;
-		@include bp-1200 {
-			padding: 80px 40px;
-			gap: 24px;
-		}
 		.left {
 			width: 37vw;
-			@include bp-1200 {
-				width: 43vw;
-			}
 			h2 {
 				font-family: $senBold;
 				font-size: 3.8vw;
 				line-height: 1.2;
 				color: #FFF;
 				margin-bottom: 24px;
-				@include bp-1200 {
-					font-size: 7.1vw;
-				}
 			}
 			p {
 				font-family: $senRegular;
 				font-size: 1.2vw;
 				line-height: 1.5;
 				color: #8491A0;
-				@include bp-1200 {
-					font-size: 2.3vw;
-				}
 			}
 		}
 		.right {
@@ -857,24 +932,15 @@
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
-			@include bp-1200 {
-				width: 43vw;
-				gap: 40px;
-			}
 			.input-block {
 				display: flex;
 				flex-direction: column;
-
-
 				label {
 					color: #FFF;
 					font-family: $senRegular;
 					font-size: 1.1vw;
 					line-height: 1.2;
 					margin-bottom: 8px;
-					@include bp-1200 {
-						font-size: 2vw;
-					}
 				}
 				input {
 					border: 1px #181823 solid;
@@ -886,9 +952,6 @@
 					&:focus {
 						background-color: #FFF;
 						color: #181823;
-					}
-					@include bp-1200 {
-						height: 4.8vh;
 					}
 				}
 				input[type=text] {
@@ -909,6 +972,69 @@
 			}
 
 		}
-	}
 
+		@include bp-1200 {
+			padding: 80px 40px;
+			gap: 24px;
+			.left {
+				width: 50%;
+				h2 {
+					font-size: 7.1vw;
+				}
+				p {
+					font-size: 2.3vw;
+				}
+			}
+			.right {
+				width: 50%;
+				gap: 40px;
+				.input-block {
+					label {
+						font-size: 2vw;
+					}
+					input {
+						height: 4.8vh;
+					}
+				}
+			}
+		}
+		@include bp-767 {
+			padding: 48px 20px;
+			flex-direction: column;
+			.left {
+				width: 100%;
+				h2 {
+					font-size: 32px;
+					line-height: 1.2;
+					margin-bottom: 16px;
+				}
+				p {
+					font-size: 18px;
+					line-height: 1.5;
+				}
+			}
+			.right {
+				width: 100%;
+				margin-left: 0;
+				.input-block {
+					label {
+						font-size: 16px;
+						line-height: 1.5;
+						margin-bottom: 8px;
+					}
+					input {
+						height: 50px;
+					}
+				}
+				button {
+					height: 75px;
+					font-size: 18px;
+					line-height: 1.5;
+				}
+			}
+		}
+	}
 }
+
+
+
