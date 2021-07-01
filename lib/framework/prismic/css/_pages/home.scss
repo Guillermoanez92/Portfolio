@@ -520,6 +520,9 @@
 				&:first-child {
 					margin-top: 250px;
 				}
+				&:nth-child(4) {
+					margin-bottom: 250px;
+				}
 				img {
 					height: auto;
 					width: 100%;
@@ -548,6 +551,7 @@
 				}
 
 			}
+
 		}
 		@include bp-1200 {
 			padding: 21px 40px 130px;
