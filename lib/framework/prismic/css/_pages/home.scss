@@ -456,7 +456,7 @@
 		display: flex;
 		justify-content: space-between;
 		border: 1px solid #181823;
-		width: 100vw;
+		height: 19.6vh;
 		.block {
 			display: flex;
 			width: 23.6vw;
@@ -492,7 +492,7 @@
 		.heading {
 			position: absolute;
 			outline: green 1px solid;
-			width: 40vw;
+			width: 40%;
 			p {
 				text-transform: uppercase;
 				color: #8491A0;
@@ -514,14 +514,19 @@
 			flex-flow: row wrap;
 			gap: 24px;
 			.block {
-				max-height: 116vh;
+				width: 50%;
+				height: auto;
 				outline: 1px blue solid;
-				flex: 0 0 22vw;
+				flex: 0 0 25%;
 				&:first-child {
 					margin-top: 250px;
 				}
 				&:nth-child(2) {
 					margin-bottom: 24px;
+				}
+				img {
+					height: 86vh;
+					width: 100%;
 				}
 				.copy {
 					background-color: #181823;
@@ -542,11 +547,8 @@
 						text-transform: initial;
 						line-height: 1.5;
 						color:  #8491A0;
-						width: 39vw;
 					}
-					img {
-						height: 86vh;
-					}
+
 				}
 
 			}
@@ -556,35 +558,41 @@
 			.heading {
 				position: relative;
 				margin-bottom: 80px;
+				width: 100%;
 				p {
-					font-size: 2vw;
+					font-size: 16px;
+					line-height: 1.5;
+					margin-bottom: 8px;
 				}
 				h2 {
-					font-size: 7.1vw;
-					width: 89.5vw;
+					font-size: 55px;
+					line-height: 1.2;
 				}
 			}
 			.grid {
 				gap: 48px;
 
 				.block {
-					width: 89vw;
+					width: 100%;
 					flex: unset;
-					height: 83vh;
+					height: auto;
 
 					&:first-child {
 						margin-top: unset;
 					}
+					img {
+						height: auto;
+					}
 					.copy {
-						height: 20vh;
-
+						height: auto;
 						h3 {
-							font-size: 3.1vw;
+							font-size: 24px;
+							line-height: 1.5;
 						}
 
 						p {
-							font-size: 2.3vw;
-							width: initial;
+							font-size: 18px;
+							line-height: 1.5;
 						}
 					}
 				}
@@ -595,28 +603,32 @@
 			.heading {
 				margin-bottom: 80px;
 				p {
-					font-size: 4.2vw;
+					font-size: 16px;
+					line-height: 1.5;
 				}
 				h2 {
-					font-size: 8.5vw;
+					font-size: 32px;
+					line-height: 1.18;
 				}
 			}
 			.grid {
 				gap: 48px;
 				.block {
-					height: 92.8vh;
+					height: auto;
 					img {
-						height: 50vh;
+						height: auto;
 					}
 					.copy {
 						padding: 40px 32px;
-						height: 43.5vh;
+						height: auto;
 						h3 {
-							font-size: 6.4vw;
+							font-size: 24px;
+							line-height: 1.5;
 							margin-bottom: 13px;
 						}
 						p {
-							font-size: 4.8vw;
+							font-size: 18px;
+							line-height: 1.5;
 						}
 					}
 				}
@@ -659,7 +671,7 @@
 		}
 		.right {
 			width: 50%;
-			min-height: 100%;
+			height: auto;
 			img {
 				height: 100%;
 			}
@@ -670,14 +682,17 @@
 				padding: 80px 40px;
 				width: 50%;
 				h2 {
-					font-size: 7.1vw;
+					font-size: 55px;
+					line-height: 1.2;
+					margin-bottom: 24px;
 				}
 				p {
-					font-size: 2.3VW;
-					width: 39vw;
+					font-size: 18px;
+					line-height: 1.5;
 				}
 				a {
-					font-size: 2vw;
+					font-size: 16px;
+					line-height: 1.5;
 				}
 			}
 			.right {
@@ -708,6 +723,9 @@
 			.right {
 				height: auto;
 				width: 100%;
+				img {
+					height: 100%;
+				}
 			}
 		}
 	}
@@ -756,32 +774,38 @@
 			padding: 80px 40px;
 			.copy {
 				padding-left: 0px;
+				margin-bottom: 124px;
+				max-width: 100%;
 				h2 {
-					font-size: 5.3vw;
+					font-size: 55px;
+					margin-bottom: 24px;
+					line-height: 1.2;
 				}
 				p {
-					font-size: 1.7vw;
-					width: 100%;
+					font-size: 18px;
+					line-height: 1.5;
 				}
 				a {
-					font-size: 1.5vw;
+					font-size: 16px;
+					line-height: 1.5;
 				}
 			}
 			img {
 				margin-left:0px;
-				width: 89vw;
-				height: 50vh;
+				width: 100%;
+				height: auto;
 			}
 		}
 		@include bp-767 {
 			padding: 64px 20px;
 			.copy {
-				padding-left: unset;
+				padding-left: 0;
 				max-width: 100%;
 				margin-bottom: 64px;
 				h2 {
 					font-size: 55px;
 					line-height: 1.12;
+					margin-bottom: 24px;
 				}
 				p {
 					font-size: 18px;
@@ -854,10 +878,13 @@
 				width: 100%;
 				margin-right: 23px;
 				h2 {
-					font-size: 7.1vw;
+					font-size: 55px;
+					line-height: 1.2;
+					margin-bottom: 24px;
 				}
 				p {
-					font-size: 2.3vw;
+					font-size: 18px;
+					line-height: 1.5;
 				}
 
 			}
@@ -869,6 +896,7 @@
 					height: auto;
 					img {
 						height: auto;
+						object-fit: fill;
 					}
 					.copy {
 						padding: 32px;
@@ -877,9 +905,6 @@
 						}
 						p {
 							font-size: 2.3vw;
-						}
-						img {
-							background-size: cover;
 						}
 
 					}
@@ -891,7 +916,7 @@
 			flex-direction: column;
 
 			.left {
-				margin-bottom: 40px;
+				margin-bottom: 24px;
 				h2 {
 					font-size: 32px;
 					line-height: 1.2;
@@ -940,7 +965,7 @@
 				font-size: 3.8vw;
 				line-height: 1.2;
 				color: #FFF;
-				margin-bottom: 24px;
+				margin-bottom: 33px;
 			}
 			p {
 				font-family: $senRegular;
@@ -1002,10 +1027,14 @@
 			.left {
 				width: 50%;
 				h2 {
-					font-size: 7.1vw;
+					font-size: 55px;
+					line-height: 1.2;
+					margin-bottom: 24px;
+
 				}
 				p {
-					font-size: 2.3vw;
+					font-size: 18px;
+					line-height: 1.5;
 				}
 			}
 			.right {
@@ -1013,10 +1042,12 @@
 				gap: 40px;
 				.input-block {
 					label {
-						font-size: 2vw;
+						font-size: 16px;
+						line-height: 1.5;
+						margin-bottom: 8px;
 					}
 					input {
-						height: 4.8vh;
+						height: 50px;
 					}
 				}
 			}
