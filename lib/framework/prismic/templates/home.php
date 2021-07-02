@@ -118,17 +118,24 @@ echo "</pre>";
 <section class="hobbies">
 	<h2><?php echo $data->hobbies_header[0]->text ?></h2>
 	<p><?php echo $data->hobbies_copy[0]->text ?></p>
+
 	<div class="tab-wrapper">
-		<?php foreach ($data->hobbies_repeater as $key => $item) { ?>
-			<button><?php echo $item->title[0]->text ?></button>
+		<?php foreach ($data->body as $key => $slice) {
+			if ($slice->slice_type === "hobby") { ?>
+				<button><?php echo $slice->primary->hobby_title[0]->text ?></button>
+			<?php } ?>
 		<?php } ?>
 	</div>
 
 	<div class="all-hobby-images">
-		<?php foreach ($data->hobbies_repeater as $key => $item) { ?>
-			<div class="hobby-images">
-				<img src=<?php echo $item->icon->url ?>>
-			</div>
+		<?php foreach ($data->body as $key => $slice) {
+			if ($slice->slice_type === "hobby") { ?>
+				<div class="hobby-images<?php if ($key === 0) { echo " active"; }?>">
+					<?php foreach ($slice->items as $idx => $hobby) { ?>
+						<img src=<?php echo $hobby->images->url ?>>
+					<?php } ?>
+				</div>
+			<?php } ?>
 		<?php } ?>
 	</div>
 </section>
