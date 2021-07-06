@@ -157,5 +157,5 @@ echo "</pre>";
 			<label>Message</label>
 			<input class="input validate" type="text" name="customer[comments]" />
 		</div>
-		<button type="submit" class="button submit">Let's Get Started</button>
+		<button type="submit" class="button submit"><a href="#">Let's Get Started</a></button>
 </section>

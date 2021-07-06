@@ -948,8 +948,7 @@
 
 	.hobbies {
 		padding: 120px 72px;
-		height: auto;
-		position: relative;
+		height: 134vh;
 		h2 {
 			font-family: $senBold;
 			font-size: 3.8vw;
@@ -980,7 +979,6 @@
 				&:hover {
 					border: none;
 					background-color: #5221E6;
-
 				}
 				&:focus {
 					border: none;
@@ -1012,9 +1010,44 @@
 			width: calc(25% - 18px);
 			height: 400px;
 		}
+		@include bp-1200 {
+			height: 1323px;
+			padding: 80px 40px;
+			h2 {
+				font-size: 55px;
+				line-height: 1.2;
+				margin-bottom: 24px;
+			}
+			p {
+				font-size: 18px;
+				line-height: 1.5;
+				margin-bottom: 64px;
+			}
+			.tab-wrapper {
+				margin-bottom: 40px;
+				gap:24px;
+				button {
+					font-size: 18px;
+					line-height: 1.5;
+					padding: 16px 12px;
+				}
+			}
+			.all-hobby-images {
+				.hobby-images {
+					flex-wrap: wrap;
+					display: flex;
+					justify-content: space-between;
+					gap:24px;
+					img {
+						width: calc(50% - 12px);
+					}
+				}
+			}
+		}
 	}
 
 	.contact {
+		position: relative;
 		display: flex;
 		padding:120px 180px;
 		.left {
@@ -1083,6 +1116,7 @@
 		@include bp-1200 {
 			padding: 80px 40px;
 			gap: 24px;
+			position: relative;
 			.left {
 				width: 50%;
 				h2 {
