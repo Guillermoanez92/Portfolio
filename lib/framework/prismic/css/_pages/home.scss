@@ -1011,7 +1011,7 @@
 			height: 400px;
 		}
 		@include bp-1200 {
-			height: 1323px;
+			height: 129vh;
 			padding: 80px 40px;
 			h2 {
 				font-size: 55px;
@@ -1038,12 +1038,40 @@
 					display: flex;
 					justify-content: space-between;
 					gap:24px;
-					
+
 					img {
 						width: calc(50% - 12px);
 					}
 				}
 			}
+		}
+		@include bp-767 {
+			height: 270vh;
+			padding: 48px 20px;
+			h2 {
+				font-size: 32px;
+				line-height: 1.2;
+				margin-bottom: 24px;
+			}
+			p {
+				font-size:18px;
+				line-height: 1.5;
+				margin-bottom: 40px;
+			}
+			.tab-wrapper {
+				width:calc(33.33% - 12px);
+				gap: 12px;
+			}
+			.all-hobby-images {
+				.hobby-images {
+					flex-direction: column;
+					img {
+						height: auto;
+						width: 100%;
+					}
+				}
+			}
+
 		}
 	}
 
