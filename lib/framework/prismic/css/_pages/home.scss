@@ -489,39 +489,39 @@
 	.projects {
 		outline: red 1px solid;
 		padding: 150px 72px;
-		.heading {
-			position: absolute;
-			outline: green 1px solid;
-			width: 40%;
-			p {
-				text-transform: uppercase;
-				color: #8491A0;
-				font-family: $senBold;
-				font-size: 1.1vw;
-				line-height: 1.5;
-				margin-bottom: 8px;
-			}
+		height: auto;
 
-			h2 {
-				font-family: $senBold;
-				font-size: 3.8vw;
-				color: #FFF;
-				line-height: 1.2;
-			}
-		}
 		.grid {
-			display: flex;
-			flex-flow: row wrap;
+			display: grid;
+			grid-template:  "a b c d e" auto
+			/ 1fr 2fr 1fr 1fr 1fr;
 			gap: 24px;
+			.heading {
+				outline: green 1px solid;
+				p {
+					text-transform: uppercase;
+					color: #8491A0;
+					font-family: $senBold;
+					font-size: 1.1vw;
+					line-height: 1.5;
+					margin-bottom: 8px;
+				}
+
+				h2 {
+					font-family: $senBold;
+					font-size: 3.8vw;
+					color: #FFF;
+					line-height: 1.2;
+				}
+			}
 			.block {
 				height: auto;
 				outline: 1px blue solid;
-				width: calc(50% - 12px);
 				&:first-child {
 					margin-top: 250px;
 				}
 				&:nth-child(4) {
-					margin-bottom: 250px;
+
 				}
 				img {
 					height: auto;
@@ -1008,7 +1008,7 @@
 		}
 		img {
 			width: calc(25% - 18px);
-			height: 400px;
+			height: auto;
 		}
 		@include bp-1200 {
 			height: 129vh;
