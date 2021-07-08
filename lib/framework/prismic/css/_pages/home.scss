@@ -494,11 +494,10 @@
 		.grid {
 			display: grid;
 			grid-template-columns: 1fr 1fr;
-			grid-template-rows: 200px 1fr 1fr;
-			grid-template-areas: "a c"
-            "b d"
-            "e .";
-
+			grid-template-rows: 1fr 1fr 1fr;
+			grid-template-areas: "a b"
+            "b b"
+           "b .";
 			gap: 24px;
 			.heading {
 				outline: green 1px solid;
