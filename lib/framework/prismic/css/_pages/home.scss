@@ -493,8 +493,12 @@
 
 		.grid {
 			display: grid;
-			grid-template:  "a b c d e" auto
-			/ 1fr 2fr 1fr 1fr 1fr;
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: 200px 1fr 1fr;
+			grid-template-areas: "a c"
+            "b d"
+            "e .";
+
 			gap: 24px;
 			.heading {
 				outline: green 1px solid;
