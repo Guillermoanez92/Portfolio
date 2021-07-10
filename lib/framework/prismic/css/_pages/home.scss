@@ -488,40 +488,42 @@
 
 	.projects {
 		outline: red 1px solid;
-		padding: 150px 72px;
+		padding: 27.7vw 72px;
 		height: auto;
+		.heading {
+			width: 50%;
+			position: relative;
+			transform: translateY(100%);
+			p {
+				text-transform: uppercase;
+				color: #8491A0;
+				font-family: $senBold;
+				font-size: 1.1vw;
+				line-height: 1.5;
+				margin-bottom: 8px;
+			}
 
+			h2 {
+				font-family: $senBold;
+				font-size: 3.8vw;
+				color: #FFF;
+				line-height: 1.2;
+			}
+		}
 		.grid {
 			display: grid;
 			grid-template-columns: 1fr 1fr;
-			grid-template-rows: 1fr 1fr 1fr;
+			grid-template-rows: 1fr 1fr;
 			grid-template-areas: "a b"
             "b b"
            "b .";
 			gap: 24px;
-			.heading {
-				outline: green 1px solid;
-				p {
-					text-transform: uppercase;
-					color: #8491A0;
-					font-family: $senBold;
-					font-size: 1.1vw;
-					line-height: 1.5;
-					margin-bottom: 8px;
-				}
 
-				h2 {
-					font-family: $senBold;
-					font-size: 3.8vw;
-					color: #FFF;
-					line-height: 1.2;
-				}
-			}
 			.block {
 				height: auto;
-				outline: 1px blue solid;
-				&:first-child {
-					margin-top: 250px;
+				&:nth-child(odd) {
+					position: relative;
+					bottom: -17vw;
 				}
 				&:nth-child(4) {
 
@@ -557,21 +559,8 @@
 
 		}
 		@include bp-1200 {
-			padding: 21px 40px 130px;
-			.heading {
-				position: relative;
-				margin-bottom: 80px;
-				width: 100%;
-				p {
-					font-size: 16px;
-					line-height: 1.5;
-					margin-bottom: 8px;
-				}
-				h2 {
-					font-size: 55px;
-					line-height: 1.2;
-				}
-			}
+			padding: 21px 40px 27.7vw;
+
 			.grid {
 				gap: 48px;
 
@@ -605,6 +594,7 @@
 			padding: 67px 20px;
 			.heading {
 				margin-bottom: 80px;
+				transform: none;
 				p {
 					font-size: 16px;
 					line-height: 1.5;
@@ -615,9 +605,16 @@
 				}
 			}
 			.grid {
-				gap: 48px;
+				display: block;
 				.block {
 					height: auto;
+					margin-bottom: 40px;
+					&:last-child {
+						margin-bottom: 0;
+					}
+					&:nth-child(odd) {
+						bottom: auto;
+					}
 					img {
 						height: auto;
 					}
@@ -951,7 +948,6 @@
 
 	.hobbies {
 		padding: 120px 72px;
-		height: 134vh;
 		h2 {
 			font-family: $senBold;
 			font-size: 3.8vw;
@@ -1004,6 +1000,9 @@
 			top: 0;
 			left: 0;
 			transition: opacity 1.25s ease-in-out;
+			&:first-child {
+				position: relative;
+			}
 			&.active {
 				opacity: 1;
 				pointer-events: all;
