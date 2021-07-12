@@ -487,11 +487,10 @@
 	}
 
 	.projects {
-		outline: red 1px solid;
-		padding: 27.7vw 72px;
+		padding: 0 72px 390px;
 		height: auto;
 		.heading {
-			width: 50%;
+			width: 39.7vw;
 			position: relative;
 			transform: translateY(100%);
 			p {
@@ -511,12 +510,10 @@
 			}
 		}
 		.grid {
+			height: auto;
 			display: grid;
 			grid-template-columns: 1fr 1fr;
 			grid-template-rows: 1fr 1fr;
-			grid-template-areas: "a b"
-            "b b"
-           "b .";
 			gap: 24px;
 
 			.block {
@@ -524,9 +521,6 @@
 				&:nth-child(odd) {
 					position: relative;
 					bottom: -17vw;
-				}
-				&:nth-child(4) {
-
 				}
 				img {
 					height: auto;
@@ -559,19 +553,30 @@
 
 		}
 		@include bp-1200 {
-			padding: 21px 40px 27.7vw;
-
+			padding: 24px 40px 18.8vw;
+			.heading {
+				transform: initial;
+				width: 100%;
+				margin-bottom: 80px;
+				p {
+					font-size: 16px;
+					line-height: 1.5;
+				}
+				h2 {
+					font-size: 55px;
+					line-height: 1.2;
+				}
+			}
 			.grid {
-				gap: 48px;
-
+				display:flex;
+				flex-direction: column;
+				gap:48px;
 				.block {
-					width: 100%;
-					flex: unset;
-					height: auto;
-
-					&:first-child {
-						margin-top: unset;
+					&:nth-child(odd) {
+						bottom: auto;
 					}
+					width: 100%;
+					height: auto;
 					img {
 						height: auto;
 					}
@@ -609,9 +614,6 @@
 				.block {
 					height: auto;
 					margin-bottom: 40px;
-					&:last-child {
-						margin-bottom: 0;
-					}
 					&:nth-child(odd) {
 						bottom: auto;
 					}
@@ -639,7 +641,7 @@
 
 	.social-module {
 		display: flex;
-		background-color: #FBE4FF;
+		background-color: #FF4500;
 
 
 		.left {
@@ -948,6 +950,7 @@
 
 	.hobbies {
 		padding: 120px 72px;
+		height: auto;
 		h2 {
 			font-family: $senBold;
 			font-size: 3.8vw;
@@ -1013,7 +1016,7 @@
 			height: auto;
 		}
 		@include bp-1200 {
-			height: 129vh;
+			height: auto;
 			padding: 80px 40px;
 			h2 {
 				font-size: 55px;
@@ -1040,6 +1043,9 @@
 					display: flex;
 					justify-content: space-between;
 					gap:24px;
+					&:first-child {
+						position: relative;
+					}
 
 					img {
 						width: calc(50% - 12px);
@@ -1048,7 +1054,7 @@
 			}
 		}
 		@include bp-767 {
-			height: 270vh;
+			height: auto;
 			padding: 48px 20px;
 			h2 {
 				font-size: 32px;
@@ -1067,6 +1073,9 @@
 			.all-hobby-images {
 				.hobby-images {
 					flex-direction: column;
+					&:first-child {
+						position: relative;
+					}
 					img {
 						height: auto;
 						width: 100%;
