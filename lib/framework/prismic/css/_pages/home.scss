@@ -453,10 +453,16 @@
 	}
 
 	.logos {
-		display: flex;
-		justify-content: space-between;
 		border: 1px solid #181823;
 		height: 19.6vh;
+		.inner, .track {
+			display: flex;
+			justify-content: flex-start;
+			height: 100%;
+		}
+		.inner {
+			white-space: nowrap;
+		}
 		.block {
 			display: flex;
 			width: 23.6vw;
@@ -471,17 +477,11 @@
 		@include bp-1200 {
 			flex-wrap: wrap;
 			justify-content: initial;
-			.block {
-				height: auto;
-				width: 50%;
-				border-bottom:  1px solid #181823;
-				border-right:  1px solid #181823;
-			}
 		}
 		@include bp-767 {
 			.block {
 				height:auto;
-				width: 50%;
+				margin: 0 15px;
 			}
 		}
 	}
@@ -641,7 +641,7 @@
 
 	.social-module {
 		display: flex;
-		background-color: #FF4500;
+		background-color: #FFB266;
 
 
 		.left {

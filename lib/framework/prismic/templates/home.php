@@ -53,11 +53,15 @@ echo "</pre>";
 	</div>
 </section>
 <section class="logos">
-	<?php foreach ($data->skillset2_repeater2 as $key => $item) { ?>
-		<div class="block">
-			<img src=<?php echo $item->icon->url ?>>
+	<div class="track">
+		<div class="inner">
+			<?php foreach ($data->skillset2_repeater2 as $key => $item) { ?>
+				<div class="block">
+					<img src=<?php echo $item->icon->url ?>>
+				</div>
+			<?php } ?>
 		</div>
-	<?php } ?>
+	</div>
 </section>
 <section id="projects" class="projects">
 	<div class="heading">
